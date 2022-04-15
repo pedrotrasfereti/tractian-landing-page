@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/* Color Variables */
+:root {
+  --persian-blue: #1F37C0;
+  --klein-blue: #011BB6;
+  --navy: #020D77;
+  --sapphire: #08084C;
+  --dodger-blue: #1774F0;
+  --deep-sky-blue: #05AFF3;
+  --caribbean-green: #03D8A9;
+  --bright-turquoise: #03F6C2;
+  --magic-mint: #9AEFDC;
+  --white: #FFFFFF;
+  --solitude: #F9FBFC;
+  --whisper: #E5E8EB;
+  --link-water: #D0D5DA;
+  --midnight-express: #18182E;
+  --victoria: #515183;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, ul, ol, li, a, img, span, p, b, input, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--klein-blue); /* not final */
+}
+
+ul, ol {
+  list-style:none;
+}
+
+a {
+  text-decoration: none;
+}
+

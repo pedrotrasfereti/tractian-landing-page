@@ -1,0 +1,105 @@
+.Header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: transparent;
+}
+
+.NavBar {
+  display: flex;
+  gap: .5rem;
+}
+
+.NavBarList {
+  display: flex;
+  gap: .5rem;
+}
+
+#customers-area-btn {
+  margin-left: 10rem;
+}
+
+/* buttons */
+.Button {
+  cursor: pointer;
+  color: var(--white);
+  border: 0;
+  border-radius: .3rem;
+  outline: 0;
+  background: var(--caribbean-green);
+  padding: 10px 15px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+}
+
+.DropdownBtn:hover,
+.LinkBtn>a:hover,
+.DropdownBtn:hover>.Arrow>path {
+  color: var(--bright-turquoise);
+  stroke: var(--bright-turquoise);
+}
+
+.DropdownBtn {
+  cursor: pointer;
+  color: var(--white);
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 10px 15px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  transition: .5s;
+}
+
+.DropdownBtn>svg {
+  margin-left: 6px;
+}
+
+.LinkBtn {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 10px 15px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+}
+
+.LinkBtn>a {
+  color: var(--white);
+  transition: .5s;
+}
+
+/* select */
+.Select {
+  cursor: pointer;
+  padding: 10px;
+  color: var(--white);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.Select:active {
+  outline: 1px solid var(--white);
+  border-radius: .3rem;
+}
+
+.Select>option {
+  background-color: var(--whisper);
+  color: var(--sapphire);
+}
+
+/* svgs */
+.Logo {
+  fill: var(--white);
+  height: 20px;
+}
+
+.Arrow>path {
+  stroke: var(--white);
+  transition: .5s;
+}

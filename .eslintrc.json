@@ -25,20 +25,21 @@
     ],
     "rules": {
         "import/no-unresolved": "error",
-        "react/jsx-filename-extension": [
-            "warn",
-            {
-                "extensions": [
-                    ".tsx"
-                ]
-            }
-        ],
+        "import/prefer-default-export": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
             {
                 "ts": "never",
                 "tsx": "never"
+            }
+        ],
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
             }
         ],
         "jsx-a11y/label-has-associated-control": [
@@ -70,6 +71,12 @@
                 "ignorePropertyModificationsFor": [
                     "state"
                 ]
+            }
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
             }
         ]
     },
