@@ -1,12 +1,42 @@
+@media only screen and (max-width: 1250px) {
+  Header>.NavBar {
+    display: none !important;
+  }
+
+  .MenuButton {
+    display: block !important;
+  }
+
+  .Logo {
+    margin-left: 40px !important;
+  }
+}
+
+@media only screen and (min-width: 1251px) {
+  .Header {
+    background: none !important;
+  }
+
+  .HamburgerMenu {
+    display: none !important;
+  }
+
+  .Logo {
+    fill: var(--white);
+  }
+}
+
 .Header {
   height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: transparent;
+  transition: .25s;
+  box-shadow: 0 2px 2px -2px var(--victoria);
 }
 
+/* navbar */
 .NavBar {
   display: flex;
   gap: .5rem;
@@ -17,8 +47,98 @@
   gap: .5rem;
 }
 
-#customers-area-btn {
-  margin-left: 10rem;
+/* menu button */
+.MenuButton {
+  cursor: pointer;
+  display: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  margin: 0 40px 0 auto;
+}
+
+.MenuButton>.Line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--porcelain);
+  margin-block: 5px;
+  border-radius: 4px;
+  transition:
+    transform .5s,
+    opacity .25s;
+}
+
+.MenuButton>.LineDark {
+  background-color: var(--sapphire);
+}
+
+/* menu button animation */
+.MenuButton.MenuBtnActive>.Line:nth-child(1),
+.MenuButton.MenuBtnActive>.LineDark:nth-child(1) {
+  transform:
+    translateY(7px) rotate(45deg);
+}
+
+.MenuButton.MenuBtnActive>.Line:nth-child(2),
+.MenuButton.MenuBtnActive>.LineDark:nth-child(2) {
+  opacity: 0;
+}
+
+.MenuButton.MenuBtnActive>.Line:nth-child(3),
+.MenuButton.MenuBtnActive>.LineDark:nth-child(3) {
+  transform:
+    translateY(-7px) rotate(-45deg);
+}
+
+/* hamburger menu */
+.HamburgerMenu {
+  background: var(--solitude);
+  padding: 1.5rem;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: -1;
+  animation: .75s slideDown forwards;
+}
+
+.MenuNavBar {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.MenuNavBar>.NavBarItem>.DropdownBtn:not(:hover),
+.MenuNavBar>*>.LinkBtn>a:not(:hover),
+.MenuNavBar>*>.LinkBtn>a:not(:hover) {
+  color: var(--sapphire);
+}
+
+.MenuNavBar>.NavBarItem>.DropdownBtn:not(:hover),
+.MenuNavBar>*>.LinkBtn>a:not(:hover),
+.MenuNavBar>*>.LinkBtn>a:not(:hover) {
+  color: var(--sapphire);
+}
+
+.RadioOuterContainer {
+  display: flex;
+  padding: 10px 15px;
+  gap: 1rem;
+}
+
+.RadioInnerContainer>input {
+  accent-color: var(--caribbean-green);
+  height: 1.15rem;
+  width: 1.15rem;
+}
+
+.RadioInnerContainer>label {
+  color: var(--sapphire);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  margin-left: .5em;
 }
 
 /* buttons */
@@ -32,6 +152,11 @@
   padding: 10px 15px;
   font-family: 'Rubik', sans-serif;
   font-size: 1em;
+  transition: .3s;
+}
+
+.Button:hover {
+  filter: brightness(95%);
 }
 
 .DropdownBtn:hover,
@@ -71,21 +196,22 @@
   transition: .5s;
 }
 
+.NavButtons {
+  display: flex;
+  gap: .5rem;
+}
+
 /* select */
 .Select {
   cursor: pointer;
-  padding: 10px;
+  padding: 5px 10px;
   color: var(--white);
   font-family: 'Rubik', sans-serif;
   font-size: 1em;
-  background: transparent;
+  background: var(--shadow);
   border: 0;
-  outline: 0;
-}
-
-.Select:active {
-  outline: 1px solid var(--white);
   border-radius: .3rem;
+  outline: 0;
 }
 
 .Select>option {
@@ -95,11 +221,35 @@
 
 /* svgs */
 .Logo {
-  fill: var(--white);
   height: 20px;
+  transition: .5s;
 }
 
 .Arrow>path {
-  stroke: var(--white);
   transition: .5s;
+}
+
+/* other */
+.hidden {
+  display: none;
+}
+
+.ml--10 {
+  margin-left: 10rem;
+}
+
+.light--bg {
+  background: var(--solitude);
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }

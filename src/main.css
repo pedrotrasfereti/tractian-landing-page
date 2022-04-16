@@ -16,31 +16,48 @@
   --magic-mint: #9AEFDC;
   --white: #FFFFFF;
   --solitude: #F9FBFC;
+  --porcelain: #ECF0F1;
   --whisper: #E5E8EB;
   --link-water: #D0D5DA;
   --midnight-express: #18182E;
   --victoria: #515183;
+  --shadow: #0000002b;
 }
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html, body, div, ul, ol, li, a, img, span, p, b, input, label {
+html,
+body,
+div,
+ul,
+ol,
+li,
+a,
+img,
+span,
+p,
+b,
+input,
+label {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
 body {
-  background-color: var(--klein-blue); /* not final */
+  /* not final */
+  background-color: var(--klein-blue);
 }
 
-ul, ol {
-  list-style:none;
+ul,
+ol {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
-
