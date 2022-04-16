@@ -7,7 +7,7 @@ import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 
 /* Styles */
-import "./index.css";
+import "./styles.css";
 
 function Header() {
   const [menuActive, setMenuActive] = useState(false);

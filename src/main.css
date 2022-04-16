@@ -42,7 +42,11 @@ span,
 p,
 b,
 input,
-label {
+label,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -50,7 +54,8 @@ label {
 
 body {
   /* not final */
-  background-color: var(--klein-blue);
+  background: rgb(1,27,182);
+  background: linear-gradient(100deg, rgba(1,27,182,1) 0%, rgba(31,55,192,1) 100%);
 }
 
 ul,

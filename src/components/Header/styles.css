@@ -100,7 +100,7 @@
   position: absolute;
   top: 80px;
   right: 0;
-  z-index: -1;
+  z-index: 0;
   animation: .75s slideDown forwards;
 }
 
@@ -149,7 +149,7 @@
   border-radius: .3rem;
   outline: 0;
   background: var(--caribbean-green);
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-family: 'Rubik', sans-serif;
   font-size: 1em;
   transition: .3s;

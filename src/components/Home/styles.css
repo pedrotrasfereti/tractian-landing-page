@@ -1,0 +1,107 @@
+.Home {
+  position: relative;
+  z-index: -1;
+}
+
+.Container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: space-around;
+  padding: 4.75rem 3.75rem;
+  max-width: 740px;
+  gap: 1.75rem;
+}
+
+.Container > .Button {
+  align-self: flex-start;
+}
+
+.LinkParagraph {
+  color: var(--white);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.LinkParagraph>a {
+  color: var(--white);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.LinkParagraph>a:hover {
+  filter: brightness(95%);
+}
+
+/* other */
+.h1 {
+  color: var(--white);
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.25em;
+}
+
+.h4 {
+  color: var(--white);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.22em;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+/* waves */
+.Waves {
+  position: relative;
+  top: 70px;
+}
+
+.Wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1000;
+  animation-delay: 0s;
+}
+
+.Wave1 {
+  height: 65px;
+  background-image: url('./assets/wave2.png');
+  background-size: 1000px 65px;
+  opacity: .5;
+  animation: wavvy 20s linear infinite;
+}
+
+.Wave2 {
+  height: 60px;
+  background-image: url('./assets/wave1.png');
+  background-size: 1000px 60px;
+  opacity: .5;
+  animation: wavvy 25s linear infinite;
+}
+
+.Wave3 {
+  height: 50px;
+  background-image: url('./assets/wave2.png');
+  background-size: 1000px 50px;
+  opacity: .5;
+  animation: wavvy 30s linear infinite;
+}
+
+.Wave4 {
+  height: 40px;
+  background-image: url('./assets/wave1.png');
+  background-size: 1000px 40px;
+  opacity: 1;
+  animation: wavvy 40s linear infinite;
+}
+
+@keyframes wavvy {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
