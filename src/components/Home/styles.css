@@ -65,18 +65,18 @@
 }
 
 .Wave1 {
-  height: 40px;
+  height: 45px;
   background-image: url('./assets/wave2.png');
-  background-size: 1000px 40px;
-  opacity: .25;
+  background-size: 1000px 45px;
+  opacity: .2;
   animation: wavvy 20s linear infinite;
 }
 
 .Wave2 {
-  height: 45px;
+  height: 60px;
   background-image: url('./assets/wave1.png');
-  background-size: 1000px 45px;
-  opacity: .35;
+  background-size: 1000px 60px;
+  opacity: .2;
   animation: wavvy 25s linear infinite;
 }
 
@@ -84,7 +84,7 @@
   height: 50px;
   background-image: url('./assets/wave2.png');
   background-size: 1000px 50px;
-  opacity: .35;
+  opacity: .2;
   animation: wavvy 30s linear infinite;
 }
 
