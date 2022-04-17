@@ -1,18 +1,40 @@
-.Home {
-  position: relative;
-  z-index: -1;
+@media only screen and (max-width: 1250px) {
+  .Home {
+    z-index: -1 !important;
+  }
+
+  .RowContainer>.Illustration {
+    width: 375px !important;
+  }
 }
 
-.Container {
+.Home {
+  position: relative;
+}
+
+.RowContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.RowContainer>.Illustration {
+  width: 450px;
+  animation: pop-up .75s forwards;
+}
+
+.ColumnContainer {
   display: flex;
   flex-flow: column nowrap;
   align-items: space-around;
   padding: 4.75rem 3.75rem;
   max-width: 740px;
   gap: 1.75rem;
+  animation: pop-up .75s forwards;
 }
 
-.Container > .Button {
+.ColumnContainer>.Button {
   align-self: flex-start;
 }
 
@@ -65,14 +87,6 @@
 }
 
 .Wave1 {
-  height: 45px;
-  background-image: url('./assets/wave2.png');
-  background-size: 1000px 45px;
-  opacity: .2;
-  animation: wavvy 20s linear infinite;
-}
-
-.Wave2 {
   height: 60px;
   background-image: url('./assets/wave1.png');
   background-size: 1000px 60px;
@@ -80,7 +94,7 @@
   animation: wavvy 25s linear infinite;
 }
 
-.Wave3 {
+.Wave2 {
   height: 50px;
   background-image: url('./assets/wave2.png');
   background-size: 1000px 50px;
@@ -88,7 +102,7 @@
   animation: wavvy 30s linear infinite;
 }
 
-.Wave4 {
+.Wave3 {
   height: 30px;
   background-image: url('./assets/wave1.png');
   background-size: 1000px 30px;
@@ -103,5 +117,17 @@
 
   100% {
     background-position-x: 1000px;
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
