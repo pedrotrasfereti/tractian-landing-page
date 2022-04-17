@@ -1,0 +1,4 @@
+.Teaser {
+  background-color: var(--solitude);
+  min-height: calc(100vh - 80px);
+}

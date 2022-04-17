@@ -1,18 +1,15 @@
 import React from "react";
 
-import Bubble from "./components/Bubble";
-
 /* Children */
-import Header from "./components/Header";
-import Home from "./components/Home";
+import { Header, Home, Teaser, Bubble } from "./components";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main id="main-page">
+      <main id="content-page">
         <Home />
-        <Home />
+        <Teaser />
       </main>
 
       <Bubble />
