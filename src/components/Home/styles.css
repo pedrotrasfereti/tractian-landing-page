@@ -21,7 +21,7 @@
 
 .RowContainer>.Illustration {
   width: 450px;
-  animation: pop-up .75s forwards;
+  animation: pop-up .5s forwards;
 }
 
 .ColumnContainer {
@@ -31,7 +31,7 @@
   padding: 4.75rem 3.75rem;
   max-width: 740px;
   gap: 1.75rem;
-  animation: pop-up .75s forwards;
+  animation: pop-up .5s forwards;
 }
 
 .ColumnContainer>.Button {
