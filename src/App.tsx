@@ -1,5 +1,7 @@
 import React from "react";
 
+import Bubble from "./components/Bubble";
+
 /* Children */
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -11,6 +13,8 @@ function App() {
       <main id="main-page">
         <Home />
       </main>
+
+      <Bubble />
     </div>
   );
 }

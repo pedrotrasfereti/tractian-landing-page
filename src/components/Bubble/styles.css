@@ -1,0 +1,15 @@
+.Bubble {
+  cursor: pointer;
+  background-color: var(--caribbean-green);
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 0;
+  border-radius: 100%;
+}
