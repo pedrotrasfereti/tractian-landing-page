@@ -6,10 +6,15 @@
   .RowContainer>.Illustration {
     width: 375px !important;
   }
+
+  .Illustration {
+    margin-bottom: 100px;
+  }
 }
 
 .Home {
   position: relative;
+  min-height: calc(100vh - 80px);
 }
 
 .RowContainer {
@@ -72,18 +77,13 @@
 }
 
 /* waves */
-.Waves {
-  position: relative;
-  top: 70px;
-}
-
 .Wave {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: -1000;
   animation-delay: 0s;
+  z-index: -1000;
 }
 
 .Wave1 {
@@ -101,6 +101,7 @@
   opacity: .2;
   animation: wavvy 30s linear infinite;
 }
+
 
 .Wave3 {
   height: 30px;

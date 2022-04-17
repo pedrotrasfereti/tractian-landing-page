@@ -12,6 +12,7 @@ function App() {
       <Header />
       <main id="main-page">
         <Home />
+        <Home />
       </main>
 
       <Bubble />
