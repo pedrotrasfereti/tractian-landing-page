@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Assets */
-import Illustration from "./assets/stripe3.png";
+import Illustration from "./assets/illustration.png";
 
 /* Styles */
 import "./styles.css";
