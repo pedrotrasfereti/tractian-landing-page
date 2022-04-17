@@ -1,7 +1,7 @@
 .Bubble {
   cursor: pointer;
   background-color: var(--caribbean-green);
-  position: absolute;
+  position: fixed;
   bottom: 25px;
   right: 25px;
   height: 60px;
