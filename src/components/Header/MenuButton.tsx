@@ -1,12 +1,16 @@
 import React from "react";
 import { MenuButtonPropTypes } from "../../interfaces";
 
-function MenuButton({ menuActive, toggleMenu }: MenuButtonPropTypes) {
+function MenuButton({
+  menuActive,
+  headerChange,
+  toggleMenu,
+}: MenuButtonPropTypes) {
   const menuBtnClassName = menuActive
     ? "MenuButton MenuBtnActive"
     : "MenuButton";
 
-  const lineClassName = menuActive ? "Line LineDark" : "Line";
+  const lineClassName = menuActive || headerChange ? "Line LineDark" : "Line";
 
   return (
     <button

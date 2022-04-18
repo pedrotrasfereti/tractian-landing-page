@@ -8,6 +8,7 @@
   --persian-blue: #1F37C0;
   --klein-blue: #011BB6;
   --navy: #020D77;
+  --deep-cove: #07074E;
   --sapphire: #08084C;
   --dodger-blue: #1774F0;
   --deep-sky-blue: #05AFF3;
@@ -21,11 +22,13 @@
   --mischka: #DDDFE4;
   --link-water: #D0D5DA;
   --midnight-express: #18182E;
+  --tundora: #404040;
   --gunsmoke: #818383;
-  --victoria: #515183;
+  --shadow-lighter: #0000001b;
   --shadow: #0000002b;
 }
 
+/* CSS Reset */
 *,
 *:before,
 *:after {
@@ -54,12 +57,6 @@ h4 {
   border: 0;
 }
 
-body {
-  /* not final */
-  background: rgb(1,27,182);
-  background: linear-gradient(100deg, rgba(1,27,182,1) 0%, rgba(31,55,192,1) 100%);
-}
-
 ul,
 ol {
   list-style: none;
@@ -69,6 +66,59 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: rgb(1,27,182);
+  background: linear-gradient(0deg, rgba(1,27,182,1) 0%, rgb(50, 50, 189) 100%);
+}
+
+/* App */
 .App {
   position: relative;
+}
+
+/* Common Components */
+.Button {
+  cursor: pointer;
+  color: var(--white);
+  border: 0;
+  border-radius: .3rem;
+  outline: 0;
+  background: var(--caribbean-green);
+  padding: 10px 20px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  transition: .3s;
+  user-select: none;
+}
+
+.Button:hover {
+  filter: brightness(95%);
+}
+
+.LinkBtn {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 10px 15px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+}
+
+.LinkBtn>a {
+  color: var(--white);
+  transition: .5s;
+}
+
+.LinkBtn>a:hover {
+  color: var(--bright-turquoise);
+  stroke: var(--bright-turquoise);
+}
+
+/* Common Styles */
+.hidden {
+  display: none;
+}
+
+.ml--10 {
+  margin-left: 10rem;
 }

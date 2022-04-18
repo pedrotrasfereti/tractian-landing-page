@@ -1,8 +1,8 @@
 import React from "react";
 
-import { NavBarPropTypes } from "../../interfaces";
+import { NavBarChildPropTypes } from "../../interfaces";
 
-function NavButtons({ inMenu }: NavBarPropTypes) {
+function NavButtons({ inMenu }: NavBarChildPropTypes) {
   /* conditional styling */
   const navButtonsClassName = inMenu ? "NavButtons" : "NavButtons ml--10";
 

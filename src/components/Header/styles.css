@@ -13,27 +13,44 @@
 }
 
 @media only screen and (min-width: 1251px) {
-  .Header {
-    background: none !important;
-  }
-
   .HamburgerMenu {
     display: none !important;
-  }
-
-  .Logo {
-    fill: var(--white);
   }
 }
 
 .Header {
+  position: fixed;
+  top: 0;
   height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   transition: .25s;
-  box-shadow: 0 2px 2px -2px var(--victoria);
+  z-index: 99;
+}
+
+.HeaderWhite {
+  background: rgba(245,248,250,1);
+  background: linear-gradient(0deg, rgba(249,251,252,1) 0%, rgba(245,248,250,1) 100%); 
+  border-bottom: 1px solid var(--mischka);
+}
+
+.HeaderWhite>.NavBar>.NavBarList>.NavBarItem>.DropdownBtn:not(:hover) {
+  color: var(--deep-cove);
+}
+
+.HeaderWhite>.NavBar>.NavBarList>.NavBarItem>.LinkBtn>a:not(:hover) {
+  color: var(--deep-cove);
+}
+
+.HeaderWhite>.NavBar>.NavButtons>.LinkBtn>a:not(:hover) {
+  color: var(--deep-cove);
+}
+
+.HeaderWhite>.NavBar>.Select {
+  background-color: var(--shadow-lighter);
+  color: var(--tundora);
 }
 
 /* navbar */
@@ -77,7 +94,8 @@
 .MenuButton.MenuBtnActive>.Line:nth-child(1),
 .MenuButton.MenuBtnActive>.LineDark:nth-child(1) {
   transform:
-    translateY(7px) rotate(45deg);
+    translateY(7px)
+    rotate(45deg);
 }
 
 .MenuButton.MenuBtnActive>.Line:nth-child(2),
@@ -98,9 +116,8 @@
   width: 100%;
   height: auto;
   position: absolute;
-  top: 80px;
+  top: 79px;
   right: 0;
-  z-index: 0;
   animation: .75s slideDown forwards;
 }
 
@@ -113,13 +130,13 @@
 .MenuNavBar>.NavBarItem>.DropdownBtn:not(:hover),
 .MenuNavBar>*>.LinkBtn>a:not(:hover),
 .MenuNavBar>*>.LinkBtn>a:not(:hover) {
-  color: var(--sapphire);
+  color: var(--deep-cove);
 }
 
 .MenuNavBar>.NavBarItem>.DropdownBtn:not(:hover),
 .MenuNavBar>*>.LinkBtn>a:not(:hover),
 .MenuNavBar>*>.LinkBtn>a:not(:hover) {
-  color: var(--sapphire);
+  color: var(--deep-cove);
 }
 
 .RadioOuterContainer {
@@ -135,30 +152,13 @@
 }
 
 .RadioInnerContainer>label {
-  color: var(--sapphire);
+  color: var(--deep-cove);
   font-family: 'Rubik', sans-serif;
   font-size: 1em;
   margin-left: .5em;
 }
 
 /* buttons */
-.Button {
-  cursor: pointer;
-  color: var(--white);
-  border: 0;
-  border-radius: .3rem;
-  outline: 0;
-  background: var(--caribbean-green);
-  padding: 10px 20px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 1em;
-  transition: .3s;
-}
-
-.Button:hover {
-  filter: brightness(95%);
-}
-
 .DropdownBtn:hover,
 .LinkBtn>a:hover,
 .DropdownBtn:hover>.Arrow>path {
@@ -182,20 +182,6 @@
   margin-left: 6px;
 }
 
-.LinkBtn {
-  border: 0;
-  outline: 0;
-  background: transparent;
-  padding: 10px 15px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 1em;
-}
-
-.LinkBtn>a {
-  color: var(--white);
-  transition: .5s;
-}
-
 .NavButtons {
   display: flex;
   gap: .5rem;
@@ -204,7 +190,7 @@
 /* select */
 .Select {
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px;
   color: var(--white);
   font-family: 'Rubik', sans-serif;
   font-size: 1em;
@@ -212,6 +198,7 @@
   border: 0;
   border-radius: .3rem;
   outline: 0;
+  transition: .5s;
 }
 
 .Select>option {
@@ -229,19 +216,7 @@
   transition: .5s;
 }
 
-/* other */
-.hidden {
-  display: none;
-}
-
-.ml--10 {
-  margin-left: 10rem;
-}
-
-.light--bg {
-  background: var(--solitude);
-}
-
+/* animation */
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);

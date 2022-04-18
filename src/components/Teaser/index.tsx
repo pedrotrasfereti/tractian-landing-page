@@ -14,6 +14,10 @@ function Teaser() {
 
         <Carousel />
       </div>
+      <div className="ContentWrapper">
+        <h3>Effortless Predictive Maintainence</h3>
+        <h2>Keep your team and machines performing at their best</h2>
+      </div>
     </section>
   );
 }

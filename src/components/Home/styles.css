@@ -15,6 +15,7 @@
 .Home {
   position: relative;
   min-height: calc(100vh - 80px);
+  margin-top: 80px;
 }
 
 .RowContainer {
@@ -27,6 +28,8 @@
 .RowContainer>.Illustration {
   width: 450px;
   animation: pop-up .5s forwards;
+  user-select: none;
+  z-index: -1000;
 }
 
 .ColumnContainer {

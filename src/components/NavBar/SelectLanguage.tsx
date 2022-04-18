@@ -1,8 +1,8 @@
 import React from "react";
 
-import { NavBarPropTypes } from "../../interfaces";
+import { NavBarChildPropTypes } from "../../interfaces";
 
-function SelectLanguage({ inMenu }: NavBarPropTypes) {
+function SelectLanguage({ inMenu }: NavBarChildPropTypes) {
   return inMenu ? (
     <div className="RadioOuterContainer" id="language-select">
       <div className="RadioInnerContainer">

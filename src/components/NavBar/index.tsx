@@ -7,11 +7,11 @@ import Arrow from "../Header/assets/Arrow";
 import NavButtons from "./NavButtons";
 import SelectLanguage from "./SelectLanguage";
 
-function NavBar({ inMenu }: NavBarPropTypes) {
+function NavBar({ headerChange, inMenu }: NavBarPropTypes) {
   /* conditional styling */
   const navBarClassName = inMenu ? "NavBar MenuNavBar" : "NavBar";
   const navBarListClassName = inMenu ? "NavBarList MenuNavBar" : "NavBarList";
-  const arrowFillColor = inMenu ? "#08084C" : "#fff";
+  const arrowFillColor = headerChange || inMenu ? "#07074E" : "#fff";
 
   return (
     <nav className={navBarClassName} id="navbar">

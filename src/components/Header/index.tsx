@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 /* Children */
 import Logo from "./assets/Logo";
@@ -10,20 +10,44 @@ import Menu from "./Menu";
 import "./styles.css";
 
 function Header() {
+  const [headerChange, setHeaderChange] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenu = () => {
     setMenuActive((prevState) => !prevState);
   };
 
-  const headerClassName = menuActive ? "Header light--bg" : "Header";
-  const logoFillColor = menuActive ? "#08084C" : "#fff";
+  const handleScroll = () => {
+    if (window.scrollY > 45) {
+      setHeaderChange(true);
+    } else {
+      setHeaderChange(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  /* conditional styling */
+  const headerClassName =
+    headerChange || menuActive ? "Header HeaderWhite" : "Header";
+
+  const logoFillColor = headerChange || menuActive ? "#08084C" : "#fff";
 
   return (
     <header className={headerClassName}>
       <Logo fillColor={logoFillColor} />
-      <NavBar />
-      <MenuButton menuActive={menuActive} toggleMenu={toggleMenu} />
+      <NavBar headerChange={headerChange} />
+      <MenuButton
+        menuActive={menuActive}
+        headerChange={headerChange}
+        toggleMenu={toggleMenu}
+      />
       <Menu menuActive={menuActive} />
     </header>
   );
