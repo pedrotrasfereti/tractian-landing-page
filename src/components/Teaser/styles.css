@@ -1,4 +1,99 @@
 .Teaser {
   background-color: var(--solitude);
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
+}
+
+.Teaser>.Wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--mischka);
+}
+
+.Teaser>.Wrapper>.Title {
+  text-transform: uppercase;
+  color: var(--gunsmoke);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  margin-top: 50px;
+}
+
+/* carousel - shadows */
+.Teaser>.Wrapper>.Carousel::before,
+.Teaser>.Wrapper>.Carousel::after {
+  background: linear-gradient(to right,  rgba(249, 251, 252, 1) 0%,rgba(255,255,255,0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.Teaser>.Wrapper>.Carousel::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.Teaser>.Wrapper>.Carousel::before {
+  left: 0;
+  top: 0;
+}
+
+/* carousel */
+.Teaser>.Wrapper>.Carousel {
+  display: grid;
+  place-items: center;
+  height: auto;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+}
+
+.Teaser>.Wrapper>.Carousel>.Track {
+  display: flex;
+  align-items: center;
+
+  /* slide track width = slide width * total number of slides */
+  width: calc(250px * 14);
+  animation: scroll 40s linear infinite;
+}
+
+.Teaser>.Wrapper>.Carousel>.Track:hover {
+  animation-play-state: paused;
+}
+
+.Slide {
+  height: 100%;
+  padding: 15px 25px;
+}
+
+.CompanyLogo {
+  filter: saturate(0%);
+  opacity: .8;
+  height: 45px;
+  width: auto;
+}
+
+.CompanyLogo.Shorter {
+  height: 25px;
+}
+
+.CompanyLogo.Taller {
+  height: 55px;
+}
+
+/* carousel - animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    /* move slide track leftwards by half of it's width */
+    transform: translateX(calc(-250px * 7));
+  }
 }
