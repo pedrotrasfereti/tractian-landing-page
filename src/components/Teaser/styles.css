@@ -3,7 +3,24 @@
     /* not final - needs adjust */
     font-size: .8em !important;
     padding: 20px 10px !important;
-    width: 100px !important;
+    width: 110px !important;
+  }
+  
+  .Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Title {
+    font: 500 1.3em 'Rubik', sans-serif !important;
+  }
+  
+  .Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Description {
+    font: 400 1.1em 'Source Sans Pro', sans-serif !important;
+  }
+
+  .Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators {
+    width: 40px !important;
+  }
+  
+  .Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators>.Indicator {
+    height: 8px !important;
+    width: 8px !important;
   }
 }
 
@@ -34,7 +51,7 @@
   flex-flow: column nowrap;
   align-items: center;
   width: 100%;
-  padding: 4.75rem 0;
+  padding-top: 4.75rem;
 }
 
 /* content - headings */
@@ -79,7 +96,7 @@
 }
 
 .Teaser>.ContentWrapper>.Controls>.Control.Selected {
-  color: #171791;
+  color: var(--persian-blue);
 }
 
 /* controls - slider */
@@ -89,7 +106,7 @@
   height: 2px;
   /* width = total available width / total of controls */
   width: calc(100% / 3);
-  background-color: #171791;
+  background-color: var(--persian-blue);
   z-index: 1;
   bottom: 0;
   transition: .25s;
@@ -107,10 +124,69 @@
 }
 
 /* content - container */
-/* .Teaser>.ContentWrapper>.Container {
+.Teaser>.ContentWrapper>.Container {
+  background-color: var(--porcelain);
   width: 100%;
-  padding: 40px;
-} */
+  padding: 0 3.75rem;
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide {
+  display: flex;
+  padding: 4.75rem 0;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide>.ImageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide>.ImageWrapper>.Image {
+  width: 100%;
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper {
+  width: 400px;
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Title {
+  color: var(--sapphire);
+  font: 500 1.5em 'Rubik', sans-serif;
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Description {
+  color: var(--sapphire);
+  font: 400 1.15em 'Source Sans Pro', sans-serif;
+  margin: 20px 0 35px;
+  line-height: 1.75rem;
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 42px;
+  height: 10px;
+  margin: 35px 0;
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators>.Indicator {
+  height: 10px;
+  width: 10px;
+  border: 0;
+  border-radius: 100%;
+  background-color: var(--clay);
+}
+
+.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators>.Indicator.Active {
+  background-color: var(--deep-cove);
+}
 
 /* carousel */
 .Teaser>.Wrapper>.Carousel {

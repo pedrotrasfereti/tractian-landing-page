@@ -8,32 +8,9 @@ JSX
 
 ...
     <div className="Container">
-      <div className="Card">
-        <span>Plug &#38; Play Sensor</span>
-        <img
-          src={Motor}
-          alt="3D model of motor with Tractian's sensor"
-          className="Image"
-        />
-      </div>
-
-      <div className="Card">
-        <span>Online Monitoring</span>
-        <img
-          src={MotorTablet}
-          alt="3D model of motor sensor alongside tablet"
-          className="Image"
-        />
-      </div>
-
-      <div className="Card">
-        <span>Asset Management</span>
-        <img
-          src={PlatformScreen}
-          alt="Tractian's platform on screen"
-          className="Image"
-        />
-      </div>
+      <div className="Card" />
+      <div className="Card" />
+      <div className="Card" />
     </div>
 
 

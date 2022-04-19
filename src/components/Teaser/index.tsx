@@ -1,25 +1,36 @@
 import React, { useEffect, useRef, useState } from "react";
 
-/* Assets */
-// import { Motor, MotorTablet, PlatformScreen } from "./assets";
-
 /* Children */
 import Carousel from "./Carousel";
 
 /* Styles */
 import "./styles.css";
 
+/* Data */
+import contentSlideData from "./data/contentSlideData";
+
 function Teaser() {
+  const [slide, setSlide] = useState(contentSlideData.sensor);
   const [selectedControl, setSelectedControl] = useState<string>("sensor");
 
   const sliderRef = useRef<HTMLSpanElement>(null);
 
   /* conditional styling */
-  const getClassName = (controlName: string) => {
-    return selectedControl === controlName ? "Control Selected" : "Control";
+  const getControlClassName = (controlName: string) => {
+    return controlName === selectedControl ? "Control Selected" : "Control";
+  };
+
+  const getIndicatorClassName = (indicator: string) => {
+    return indicator === selectedControl ? "Indicator Active" : "Indicator";
   };
 
   useEffect(() => {
+    /* hydrate slide */
+    setSlide(
+      contentSlideData[selectedControl as keyof typeof contentSlideData]
+    );
+
+    /* slider style */
     const leftOffsetMap = {
       sensor: "0",
       om: "calc(100% / 3)",
@@ -49,21 +60,21 @@ function Teaser() {
 
         <div className="Controls">
           <button
-            className={getClassName("sensor")}
+            className={getControlClassName("sensor")}
             type="button"
             onClick={() => setSelectedControl("sensor")}
           >
             Plug &#38; Play Sensor
           </button>
           <button
-            className={getClassName("om")}
+            className={getControlClassName("om")}
             type="button"
             onClick={() => setSelectedControl("om")}
           >
             Online Monitoring
           </button>
           <button
-            className={getClassName("am")}
+            className={getControlClassName("am")}
             type="button"
             onClick={() => setSelectedControl("am")}
           >
@@ -72,7 +83,29 @@ function Teaser() {
           <span className="Slider" ref={sliderRef} />
         </div>
 
-        <div className="Container" />
+        <div className="Container">
+          <div className="Slide">
+            <div className="ImageWrapper">
+              <img src={slide.image} alt={slide.imageAlt} className="Image" />
+            </div>
+
+            <div className="Wrapper">
+              <h4 className="Title">{slide.title}</h4>
+
+              <p className="Description">{slide.description}</p>
+
+              <button className="Button" type="button">
+                Schedule a demo
+              </button>
+
+              <div className="Indicators">
+                <span className={getIndicatorClassName("sensor")} />
+                <span className={getIndicatorClassName("om")} />
+                <span className={getIndicatorClassName("am")} />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

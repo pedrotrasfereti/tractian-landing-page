@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Source+Sans+Pro:wght@300;400&display=swap');
 
 /* Color Variables */
 :root {
@@ -21,6 +21,7 @@
   --whisper: #E5E8EB;
   --mischka: #DDDFE4;
   --link-water: #D0D5DA;
+  --clay: #BBC3CE;
   --gull-gray: #9da9b6;
   --midnight-express: #18182E;
   --tundora: #404040;
