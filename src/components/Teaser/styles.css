@@ -1,26 +1,55 @@
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1000px) {
   .Teaser>.ContentWrapper>.Controls>.Control {
-    /* not final - needs adjust */
-    font-size: .8em !important;
+    font-size: 1em !important;
     padding: 20px 10px !important;
-    width: 110px !important;
-  }
-  
-  .Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Title {
-    font: 500 1.3em 'Rubik', sans-serif !important;
-  }
-  
-  .Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Description {
-    font: 400 1.1em 'Source Sans Pro', sans-serif !important;
+    width: auto !important;
   }
 
-  .Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators {
-    width: 40px !important;
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Title {
+    font: 500 1.4em 'Rubik', sans-serif !important;
   }
   
-  .Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators>.Indicator {
-    height: 8px !important;
-    width: 8px !important;
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Description {
+    font: 400 1.2em 'Source Sans Pro', sans-serif !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Teaser>.ContentWrapper>.Controls>.Control {
+    font-size: .8em !important;
+    padding: 20px 10px !important;
+    width: 120px !important;
+  }
+
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Title {
+    font: 500 1.2em 'Rubik', sans-serif !important;
+  }
+  
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Description {
+    font: 400 1em 'Source Sans Pro', sans-serif !important;
+    line-height: 1.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.ImageWrapper {
+    height: auto !important;
+    width: auto !important;
+  }
+
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper {
+    height: auto !important;
+    width: auto !important;
+  }
+
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators {
+    width: 38px !important;
+    margin-top: 30px !important;
+  }
+
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators>.Indicator {
+    width: 9px !important;
+    height: 9px !important;
   }
 }
 
@@ -125,58 +154,65 @@
 
 /* content - container */
 .Teaser>.ContentWrapper>.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--porcelain);
   width: 100%;
-  padding: 0 3.75rem;
+  padding: 4.75rem 3.75rem;
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide {
+.Teaser>.ContentWrapper>.Container>.ContentSlide {
   display: flex;
-  padding: 4.75rem 0;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide>.ImageWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Teaser>.ContentWrapper>.Container>.ContentSlide>.ImageWrapper {
+  height: 350px;
   width: 400px;
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide>.ImageWrapper>.Image {
+.Teaser>.ContentWrapper>.Container>.ContentSlide>.ImageWrapper>.Image {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper {
+.Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 320px;
   width: 400px;
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Title {
+.Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Title {
   color: var(--sapphire);
   font: 500 1.5em 'Rubik', sans-serif;
+  margin-bottom: 15px;
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Description {
+.Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Description {
   color: var(--sapphire);
   font: 400 1.15em 'Source Sans Pro', sans-serif;
-  margin: 20px 0 35px;
   line-height: 1.75rem;
+  margin-bottom: 20px;
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators {
+.Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  width: 42px;
-  height: 10px;
-  margin: 35px 0;
+  width: 40px;
+  margin-top: auto;
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators>.Indicator {
+.Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators>.Indicator {
   height: 10px;
   width: 10px;
   border: 0;
@@ -184,8 +220,8 @@
   background-color: var(--clay);
 }
 
-.Teaser>.ContentWrapper>.Container>.Slide>.Wrapper>.Indicators>.Indicator.Active {
-  background-color: var(--deep-cove);
+.Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators>.Indicator.Active {
+  background-color: var(--navy);
 }
 
 /* carousel */

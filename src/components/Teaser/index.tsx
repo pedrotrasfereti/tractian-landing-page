@@ -84,7 +84,7 @@ function Teaser() {
         </div>
 
         <div className="Container">
-          <div className="Slide">
+          <div className="ContentSlide">
             <div className="ImageWrapper">
               <img src={slide.image} alt={slide.imageAlt} className="Image" />
             </div>
