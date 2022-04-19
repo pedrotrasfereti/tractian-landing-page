@@ -21,13 +21,26 @@
     width: 120px !important;
   }
 
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper {
+    align-items: center !important;
+  }
+
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Button {
+    margin-top: 10px !important;
+    align-self: center !important;
+  }
+
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Title {
-    font: 500 1.2em 'Rubik', sans-serif !important;
+    font: 500 1.3em 'Rubik', sans-serif !important;
   }
   
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Description {
-    font: 400 1em 'Source Sans Pro', sans-serif !important;
-    line-height: 1.8rem !important;
+    font: 400 1.1em 'Source Sans Pro', sans-serif !important;
+    line-height: 1.9rem !important;
+  }
+
+  .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators {
+    margin-top: 30px !important;
   }
 }
 
@@ -43,13 +56,12 @@
   }
 
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators {
-    width: 38px !important;
-    margin-top: 30px !important;
+    width: 37.5px !important;
   }
 
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators>.Indicator {
-    width: 9px !important;
-    height: 9px !important;
+    width: 8.5px !important;
+    height: 8.5px !important;
   }
 }
 
