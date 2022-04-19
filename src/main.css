@@ -36,13 +36,16 @@
   
   /* Margins */
   --home-margin-top: var(--header-height);
-  --menu-l-margin-mobile: 0 auto 0 2.18rem;
-  --menu-r-margin-mobile: 0 2.18rem 0 auto;
+  --margin-l-mobile: 0 auto 0 2.18rem;
+  --margin-r-mobile: 0 2.18rem 0 auto;
 
   /* Paddings */
   --padding-desktop: 4.75rem 3.75rem;
+  --padding-mobile: 4.75rem 2.18rem;
   --padding-tb-desktop: 4.75rem;
+  --padding-tb-mobile: 4.75rem;
   --padding-lr-desktop: 3.75rem;
+  --padding-lr-mobile: 2.18rem;
 
   /* Borders */
   --border-radius: .3rem;
@@ -56,6 +59,7 @@
   --menu-gap: 1.5rem;
 
   /* Fonts */
+  --x-small-regular-font: 400 .9em 'Rubik', sans-serif;
   --small-strong-font: 500 1em 'Rubik', sans-serif;
   --small-regular-font: 400 1em 'Rubik', sans-serif;
   --small-thin-font: 100 1em 'Rubik', sans-serif;

@@ -3,12 +3,31 @@
     z-index: -1 !important;
   }
 
-  .RowContainer>.Illustration {
+  .Home>.RowContainer>.Illustration {
     width: 375px !important;
   }
 
+  .Home>.RowContainer>.ColumnContainer {
+    padding: var(--padding-mobile) !important;
+  }
+
   .Illustration {
-    margin-bottom: 100px;
+    margin-bottom: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Home>.RowContainer>.ColumnContainer>.h1 {
+    font: 500 2em 'Rubik', sans-serif !important;
+  }
+
+  .Home>.RowContainer>.ColumnContainer>.h4 {
+    font: var(--p-font) !important;
+    line-height: 1.6em !important;
+  }
+
+  .Home>.RowContainer>.ColumnContainer>.LinkParagraph {
+    font: var(--x-small-regular-font) !important;
   }
 }
 

@@ -1,8 +1,16 @@
 @media only screen and (max-width: 1000px) {
   .Teaser>.ContentWrapper>.Controls>.Control {
-    font-size: 1em !important;
+    font-size: 1.05em !important;
     padding: 20px 10px !important;
     width: auto !important;
+  }
+
+  .Teaser>.ContentWrapper>.Headings {
+    padding: 0 var(--padding-lr-mobile) !important;
+  }
+
+  .Teaser>.ContentWrapper>.Container {
+    padding: var(--padding-mobile) !important;
   }
 }
 
@@ -24,11 +32,13 @@
 
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Title {
     font: 500 1.3em 'Rubik', sans-serif !important;
+    text-align: center !important;
   }
   
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Description {
     font: 400 1.1em 'Source Sans Pro', sans-serif !important;
     line-height: 1.9rem !important;
+    text-align: center !important;
   }
 
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators {
@@ -37,6 +47,14 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .Teaser>.Wrapper>.Title {
+    font: var(--x-small-regular-font) !important;
+  }
+
+  .Teaser>.ContentWrapper>.Headings {
+    font: 500 .85em 'Rubik', sans-serif !important;
+  }
+
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.ImageWrapper {
     height: auto !important;
     width: auto !important;
@@ -98,12 +116,14 @@
 .Teaser>.ContentWrapper>.Headings>h3 {
   color: var(--sapphire);
   font: var(--h3-font);
+  text-align: center;
 }
 
 .Teaser>.ContentWrapper>.Headings>h2 {
   color: var(--sapphire);
   font: var(--h2-font);
   margin: 25px 0 65px;
+  text-align: center;
 }
 
 .Teaser>.ContentWrapper>.Headings>h2>strong {

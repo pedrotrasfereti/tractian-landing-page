@@ -8,7 +8,7 @@
   }
 
   .Logo {
-    margin: var(--menu-l-margin-mobile) !important;
+    margin: var(--margin-l-mobile) !important;
   }
 }
 
@@ -65,7 +65,7 @@
   cursor: pointer;
   display: none;
   background: none;
-  margin: var(--menu-r-margin-mobile);
+  margin: var(--margin-r-mobile);
   border: 0;
   outline: 0;
 }
@@ -138,11 +138,10 @@
 .RadioOuterContainer {
   display: flex;
   padding: 10px 15px;
-  gap: --var(--gap-small);
+  gap: var(--gap-tiny);
 }
 
 .RadioInnerContainer>input {
-  accent-color: var(--caribbean-green);
   height: 1.15rem;
   width: 1.15rem;
 }
