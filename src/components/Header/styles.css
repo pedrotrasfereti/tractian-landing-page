@@ -31,8 +31,7 @@
 }
 
 .HeaderWhite {
-  background: rgba(245,248,250,1);
-  background: linear-gradient(0deg, rgba(249,251,252,1) 0%, rgba(245,248,250,1) 100%); 
+  background-color: var(--white);
   border-bottom: 1px solid var(--mischka);
 }
 
@@ -111,7 +110,7 @@
 
 /* hamburger menu */
 .HamburgerMenu {
-  background: var(--solitude);
+  background: var(--white);
   padding: 1.5rem;
   width: 100%;
   height: auto;

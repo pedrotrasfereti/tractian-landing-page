@@ -5,3 +5,6 @@ export { default as DanoneLogo } from "./DanoneLogo.png";
 export { default as ElectroluxLogo } from "./ElectroluxLogo.png";
 export { default as EmbraerLogo } from "./EmbraerLogo.png";
 export { default as KärcherLogo } from "./KärcherLogo.png";
+export { default as Motor } from "./Motor.png";
+export { default as MotorTablet } from "./MotorTablet.png";
+export { default as PlatformScreen } from "./PlatformScreen.png";

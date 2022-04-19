@@ -21,10 +21,11 @@
   --whisper: #E5E8EB;
   --mischka: #DDDFE4;
   --link-water: #D0D5DA;
+  --gull-gray: #9da9b6;
   --midnight-express: #18182E;
   --tundora: #404040;
   --gunsmoke: #818383;
-  --shadow-lighter: #0000001b;
+  --shadow-lighter: #0000000F;
   --shadow: #0000002b;
 }
 
@@ -67,8 +68,8 @@ a {
 }
 
 body {
-  background: rgb(1,27,182);
-  background: linear-gradient(0deg, rgba(1,27,182,1) 0%, rgb(50, 50, 189) 100%);
+  background: rgb(1, 27, 182);
+  background: linear-gradient(0deg, rgba(1, 27, 182, 1) 0%, rgb(50, 50, 189) 100%);
 }
 
 /* App */
@@ -85,8 +86,7 @@ body {
   outline: 0;
   background: var(--caribbean-green);
   padding: 10px 20px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 1em;
+  font: 500 1em 'Rubik', sans-serif;
   transition: .3s;
   user-select: none;
 }

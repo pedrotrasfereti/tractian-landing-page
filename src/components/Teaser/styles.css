@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1250px) {
+  .Teaser>.ContentWrapper>.Controls>.Control {
+    /* not final - needs adjust */
+    font-size: .8em !important;
+    padding: 20px 10px !important;
+    width: 100px !important;
+  }
+}
+
 .Teaser {
   position: relative;
   background-color: var(--solitude);
@@ -15,57 +24,93 @@
 .Teaser>.Wrapper>.Title {
   text-transform: uppercase;
   color: var(--gunsmoke);
-  font-family: 'Rubik', sans-serif;
-  font-size: 1em;
-  font-weight: 100;
+  font: 100 1em 'Rubik', sans-serif;
   margin-top: 50px;
 }
 
 /* content */
-.ContentWrapper {
+.Teaser>.ContentWrapper {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   width: 100%;
-  padding: 3.75rem;
+  padding: 4.75rem 0;
 }
 
-.ContentWrapper>h3 {
-  color: var(--deep-cove);
-  font-family: 'Rubik', sans-serif;
-  font-size: 2.15em;
+/* content - headings */
+.Teaser>.ContentWrapper>.Headings {
+  display: inherit;
+  flex-flow: inherit;
+  align-items: inherit;
+  padding: 0 3.75rem;
+}
+
+.Teaser>.ContentWrapper>.Headings>h3 {
+  color: var(--sapphire);
+  font: 500 2.15em 'Rubik', sans-serif;
+}
+
+.Teaser>.ContentWrapper>.Headings>h2 {
+  color: var(--sapphire);
+  font: 100 1.2em 'Rubik', sans-serif;
+  margin: 25px 0 65px;
+}
+
+.Teaser>.ContentWrapper>.Headings>h2>strong {
   font-weight: 500;
 }
 
-.ContentWrapper>h2 {
-  color: var(--deep-cove);
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.15em;
-  font-weight: 100;
-  margin-top: 25px;
+/* content - controls */
+.Teaser>.ContentWrapper>.Controls {
+  position: relative;
 }
 
-/* carousel - shadows */
-.Teaser>.Wrapper>.Carousel::before,
-.Teaser>.Wrapper>.Carousel::after {
-  background: linear-gradient(to right,  rgba(249, 251, 252, 1) 0%,rgba(255,255,255,0) 100%);
-  content: "";
-  height: 100%;
+.Teaser>.ContentWrapper>.Controls>.Control {
+  cursor: pointer;
+  position: relative;
+  background: none;
+  padding: 20px 40px;
+  outline: 0;
+  border: 0;
+  color: var(--gull-gray);
+  font: 500 1.12em 'Rubik', sans-serif;
+  text-transform: uppercase;
+  transition: .25s;
+}
+
+.Teaser>.ContentWrapper>.Controls>.Control.Selected {
+  color: #171791;
+}
+
+/* controls - slider */
+.Teaser>.ContentWrapper>.Controls>.Slider {
+  display: block;
   position: absolute;
-  width: 200px;
-  z-index: 2;
+  height: 2px;
+  /* width = total available width / total of controls */
+  width: calc(100% / 3);
+  background-color: #171791;
+  z-index: 1;
+  bottom: 0;
+  transition: .25s;
 }
 
-.Teaser>.Wrapper>.Carousel::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
+.Teaser>.ContentWrapper>.Controls::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--mischka);
+  display: block;
+  height: 2px;
+  width: 100%;
+  z-index: 0;
 }
 
-.Teaser>.Wrapper>.Carousel::before {
-  left: 0;
-  top: 0;
-}
+/* content - container */
+/* .Teaser>.ContentWrapper>.Container {
+  width: 100%;
+  padding: 40px;
+} */
 
 /* carousel */
 .Teaser>.Wrapper>.Carousel {
@@ -110,6 +155,28 @@
 
 .CompanyLogo.Taller {
   height: 55px;
+}
+
+/* carousel - shadows */
+.Teaser>.Wrapper>.Carousel::before,
+.Teaser>.Wrapper>.Carousel::after {
+  background: linear-gradient(to right, rgba(249, 251, 252, 1) 0%,rgba(255,255,255,0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.Teaser>.Wrapper>.Carousel::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.Teaser>.Wrapper>.Carousel::before {
+  left: 0;
+  top: 0;
 }
 
 /* carousel - animation */
