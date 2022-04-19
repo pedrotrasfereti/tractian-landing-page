@@ -8,7 +8,7 @@
   }
 
   .Logo {
-    margin-left: 40px !important;
+    margin: var(--menu-l-margin-mobile) !important;
   }
 }
 
@@ -21,7 +21,7 @@
 .Header {
   position: fixed;
   top: 0;
-  height: 80px;
+  height: var(--header-height);
   width: 100%;
   display: flex;
   align-items: center;
@@ -53,14 +53,11 @@
 }
 
 /* navbar */
-.NavBar {
+.NavBar,
+.NavBarList,
+.NavButtons {
   display: flex;
-  gap: .5rem;
-}
-
-.NavBarList {
-  display: flex;
-  gap: .5rem;
+  gap: var(--gap-tiny);
 }
 
 /* menu button */
@@ -68,9 +65,9 @@
   cursor: pointer;
   display: none;
   background: none;
+  margin: var(--menu-r-margin-mobile);
   border: 0;
   outline: 0;
-  margin: 0 40px 0 auto;
 }
 
 .MenuButton>.Line {
@@ -81,7 +78,7 @@
   margin-block: 5px;
   border-radius: 4px;
   transition:
-    transform .5s,
+    transform var(--animation-duration),
     opacity .25s;
 }
 
@@ -111,19 +108,19 @@
 /* hamburger menu */
 .HamburgerMenu {
   background: var(--white);
-  padding: 1.5rem;
+  padding: var(--menu-gap);
   width: 100%;
   height: auto;
   position: absolute;
-  top: 80px;
+  top: var(--header-height);
   right: 0;
-  animation: .75s slideDown forwards;
+  animation: var(--animation-duration) slideDown forwards;
 }
 
 .MenuNavBar {
   align-items: flex-start;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--menu-gap);
 }
 
 .MenuNavBar>.NavBarItem>.DropdownBtn:not(:hover),
@@ -141,7 +138,7 @@
 .RadioOuterContainer {
   display: flex;
   padding: 10px 15px;
-  gap: 1rem;
+  gap: --var(--gap-small);
 }
 
 .RadioInnerContainer>input {
@@ -172,18 +169,12 @@
   outline: 0;
   background: transparent;
   padding: 10px 15px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 1em;
-  transition: .5s;
+  font: var(--small-regular-font);
+  transition: var(--animation-duration);
 }
 
 .DropdownBtn>svg {
   margin-left: 6px;
-}
-
-.NavButtons {
-  display: flex;
-  gap: .5rem;
 }
 
 /* select */
@@ -191,13 +182,12 @@
   cursor: pointer;
   padding: 5px;
   color: var(--white);
-  font-family: 'Rubik', sans-serif;
-  font-size: 1em;
+  font: var(--small-regular-font);
   background: var(--shadow);
   border: 0;
-  border-radius: .3rem;
+  border-radius: var(--border-radius);
   outline: 0;
-  transition: .5s;
+  transition: var(--animation-duration);
 }
 
 .Select>option {
@@ -208,11 +198,11 @@
 /* svgs */
 .Logo {
   height: 20px;
-  transition: .5s;
+  transition: var(--animation-duration);
 }
 
 .Arrow>path {
-  transition: .5s;
+  transition: var(--animation-duration);
 }
 
 /* animation */

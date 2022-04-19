@@ -3,8 +3,8 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Source+Sans+Pro:wght@300;400&display=swap');
 
-/* Color Variables */
 :root {
+  /* Color Variables */
   --persian-blue: #1F37C0;
   --klein-blue: #011BB6;
   --navy: #020D77;
@@ -28,6 +28,49 @@
   --gunsmoke: #818383;
   --shadow-lighter: #0000000F;
   --shadow: #0000002b;
+
+  /* Dimensions */
+  --header-height: 5rem;
+  --home-min-height: calc(100vh - var(--header-height));
+  --section-min-height: 100vh;
+  
+  /* Margins */
+  --home-margin-top: var(--header-height);
+  --menu-l-margin-mobile: 0 auto 0 2.18rem;
+  --menu-r-margin-mobile: 0 2.18rem 0 auto;
+
+  /* Paddings */
+  --padding-desktop: 4.75rem 3.75rem;
+  --padding-tb-desktop: 4.75rem;
+  --padding-lr-desktop: 3.75rem;
+
+  /* Borders */
+  --border-radius: .3rem;
+  --border-radius-circle: 100%;
+
+  /* Gaps */
+  --gap-large: 1.75rem;
+  --gap-medium: 1.5rem;
+  --gap-small: 1rem;
+  --gap-tiny: .5rem;
+  --menu-gap: 1.5rem;
+
+  /* Fonts */
+  --small-strong-font: 500 1em 'Rubik', sans-serif;
+  --small-regular-font: 400 1em 'Rubik', sans-serif;
+  --small-thin-font: 100 1em 'Rubik', sans-serif;
+  --h1-font: 500 2.25em 'Rubik', sans-serif;
+  --h2-font: 100 1.2em 'Rubik', sans-serif;
+  --h3-font: 500 2.15em 'Rubik', sans-serif;
+  --h4-title-font: 500 1.5em 'Rubik', sans-serif;
+  --h4-sub-font: 400 1.3em 'Source Sans Pro', sans-serif;
+  --p-font: 400 1.15em 'Source Sans Pro', sans-serif;
+
+  /* Other */
+  --dim-filter: 95%;
+  --animation-duration: .5s;
+  --animation-fast: .25s;
+  --carousel-duration: 40s;
 }
 
 /* CSS Reset */
@@ -83,18 +126,18 @@ body {
   cursor: pointer;
   color: var(--white);
   border: 0;
-  border-radius: .3rem;
+  border-radius: var(--border-radius);
   outline: 0;
   background: var(--caribbean-green);
   padding: 10px 20px;
-  font: 500 1em 'Rubik', sans-serif;
-  transition: .3s;
+  font: var(--small-strong-font);
   user-select: none;
   align-self: flex-start;
+  transition: .3s;
 }
 
 .Button:hover {
-  filter: brightness(95%);
+  filter: brightness(var(--button-dim-filter));
 }
 
 .LinkBtn {
