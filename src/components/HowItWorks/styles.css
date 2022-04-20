@@ -1,0 +1,28 @@
+.HowItWorks {
+  background: var(--solitude);
+  min-height: var(--section-min-height);
+}
+
+.HowItWorks>.Wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: var(--padding-desktop);
+}
+
+.HowItWorks>.Wrapper>.Title {
+  color: var(--sapphire);
+  font: var(--h2-font);
+}
+
+.HowItWorks>.Wrapper>.Subtitle {
+  color: var(--deep-cove);
+  font: var(--h3-font);
+  margin: 20px 0 65px;
+}
+
+.HowItWorks>.ContentWrapper {
+  background-color: var(--midnight-express);
+  width: 100%;
+  padding: var(--padding-desktop);
+}

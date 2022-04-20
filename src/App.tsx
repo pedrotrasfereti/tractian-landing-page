@@ -1,5 +1,8 @@
 import React from "react";
 
+/* Styles */
+import "./App.css";
+
 /* Children */
 import {
   Header,
@@ -8,6 +11,7 @@ import {
   Bubble,
   WhyTractian,
   Products,
+  HowItWorks,
 } from "./components";
 
 function App() {
@@ -19,6 +23,7 @@ function App() {
         <Teaser />
         <Products />
         <WhyTractian />
+        <HowItWorks />
       </main>
 
       <Bubble />

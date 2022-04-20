@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--gap-x-large);
+  border-bottom: 1px solid var(--mischka);
 }
 
 .Products>.Product {
