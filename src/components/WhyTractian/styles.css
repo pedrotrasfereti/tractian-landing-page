@@ -36,6 +36,13 @@
   border-top: 10px solid var(--klein-blue);
   border-radius: .3rem;
   box-shadow: 0 0 2px 1px var(--mischka);
+  transition: var(--animation-fast);
+  user-select: none;
+}
+
+.WhyTractian>.Container>.Card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 6px 4px var(--shadow-lighter);
 }
 
 .WhyTractian>.Container>.Card>.Title {
@@ -44,7 +51,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 
 .WhyTractian>.Container>.Card>.Title>.CheckIcon {
   position: relative;
@@ -59,7 +65,3 @@
   text-align: center;
   line-height: 27px;
 }
-
-/* .WhyTractian>.Container>.Card>.Image {
-  width: 80%;
-} */

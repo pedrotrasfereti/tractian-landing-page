@@ -52,6 +52,7 @@
   --border-radius-circle: 100%;
 
   /* Gaps */
+  --gap-x-large: 2rem;
   --gap-large: 1.75rem;
   --gap-medium: 1.5rem;
   --gap-small: 1rem;
@@ -140,7 +141,35 @@ body {
   transition: .3s;
 }
 
-.Button:hover {
+.ButtonAlt {
+  cursor: pointer;
+  color: var(--sapphire);
+  border: 0;
+  border-radius: var(--border-radius);
+  outline: 0;
+  background: var(--magic-mint);
+  padding: 10px 20px;
+  font: var(--small-strong-font);
+  user-select: none;
+  transition: .3s;
+}
+
+.ButtonAltDark {
+  cursor: pointer;
+  color: var(--white);
+  border: 0;
+  border-radius: var(--border-radius);
+  outline: 0;
+  background: var(--dodger-blue);
+  padding: 10px 20px;
+  font: var(--small-strong-font);
+  user-select: none;
+  transition: .3s;
+}
+
+.Button:hover,
+.ButtonAlt:hover,
+.ButtonAltColored:hover {
   filter: brightness(var(--button-dim-filter));
 }
 
