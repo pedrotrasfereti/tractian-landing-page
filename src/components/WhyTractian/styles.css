@@ -1,0 +1,65 @@
+.WhyTractian {
+  background: var(--solitude);
+  min-height: var(--section-min-height);
+  padding: var(--padding-desktop);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.WhyTractian>.Heading {
+  margin-bottom: 65px;
+  font: var(--h3-font);
+}
+
+.WhyTractian>.Button {
+  margin-top: 65px;
+  align-self: center;
+}
+
+.WhyTractian>.Container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+.WhyTractian>.Container>.Card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: var(--white);
+  height: 300px;
+  width: 250px;
+  padding: 50px 20px 45px;
+  border-top: 10px solid var(--klein-blue);
+  border-radius: .3rem;
+  box-shadow: 0 0 2px 1px var(--mischka);
+}
+
+.WhyTractian>.Container>.Card>.Title {
+  color: var(--klein-blue);
+  font: 500 1.12em 'Rubik', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.WhyTractian>.Container>.Card>.Title>.CheckIcon {
+  position: relative;
+  top: 1px;
+  right: 8px;
+}
+
+.WhyTractian>.Container>.Card>.Paragraph {
+  color: var(--klein-blue);
+  font: var(--p-font);
+  margin-top: 25px;
+  text-align: center;
+  line-height: 27px;
+}
+
+/* .WhyTractian>.Container>.Card>.Image {
+  width: 80%;
+} */

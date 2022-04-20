@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Children */
-import { Header, Home, Teaser, Bubble } from "./components";
+import { Header, Home, Teaser, Bubble, WhyTractian } from "./components";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <main id="content-page">
         <Home />
         <Teaser />
+        <WhyTractian />
       </main>
 
       <Bubble />
