@@ -25,4 +25,119 @@
   background-color: var(--midnight-express);
   width: 100%;
   padding: var(--padding-desktop);
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--gap-medium);
+}
+
+/* step list */
+.HowItWorks>.ContentWrapper>.Steps {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.HowItWorks>.ContentWrapper>.Steps,
+.HowItWorks>.ContentWrapper>.ImageContainer {
+  flex: 1;
+}
+
+/* step list - reset button style */
+.HowItWorks>.ContentWrapper>.Steps>.Step>button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: var(--gap-medium);
+  cursor: pointer;
+  border: 0;
+  border-radius: .3rem;
+  outline: 0;
+  min-height: 7rem;
+  padding: 1rem;
+  width: 100%;
+  transition: var(--animation-fast);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 0;
+  border-radius: .3rem;
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step>button>.Number {
+  font: var(--large-strong-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 23px;
+  min-width: 23px;
+  border: 0;
+  border-radius: var(--border-radius-circle);
+  transition: var(--animation-fast);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content>.Title {
+  font: var(--h4-title-font);
+  transition: var(--animation-fast);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content>.Description {
+  font: var(--large-regular-font);
+  line-height: 27px;
+  text-align: start;
+  margin-top: 10px;
+  transition: var(--animation-fast);
+}
+
+/* step list - unactive */
+.HowItWorks>.ContentWrapper>.Steps>.Step>button {
+  background: transparent;
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step>button>.Number {
+  background: var(--solitude);
+  color: var(--midnight-express);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content>.Title {
+  color: var(--solitude);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content>.Description {
+  color: var(--gull-gray);
+}
+
+/* active */
+.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button {
+  background-color: var(--mirage);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Number {
+  background: var(--caribbean-green);
+  color: var(--midnight-express);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Content>.Title {
+  color: var(--caribbean-green);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Content>.Description {
+  color: var(--white);
+}
+
+/* image */
+.HowItWorks>.ContentWrapper>.ImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24rem;
+}
+
+.HowItWorks>.ContentWrapper>.ImageContainer>.Image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
 }

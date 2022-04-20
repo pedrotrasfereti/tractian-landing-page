@@ -23,6 +23,7 @@
   --link-water: #D0D5DA;
   --clay: #BBC3CE;
   --gull-gray: #9da9b6;
+  --mirage: #1B1F32;
   --midnight-express: #18182E;
   --tundora: #404040;
   --gunsmoke: #818383;
@@ -65,6 +66,7 @@
   --small-regular-font: 400 1em 'Rubik', sans-serif;
   --small-thin-font: 100 1em 'Rubik', sans-serif;
   --medium-regular-font: 400 1.15em 'Source Sans Pro', sans-serif;
+  --large-regular-font: 400 1.25em 'Rubik', sans-serif;
   --large-strong-font: 500 1.25em 'Rubik', sans-serif;
 
   --h1-font: 500 2.25em 'Rubik', sans-serif;

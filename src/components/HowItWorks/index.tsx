@@ -1,14 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 /* Styles */
 import "./styles.css";
 
-function HowItWorks() {
-  const [selectedControl, setSelectedControl] = useState("om");
+/* Data */
+import data from "./data";
 
-  const getClassName = (controlName: string) => {
+/* Types */
+interface IStep {
+  title: string;
+  description: string;
+  image: string;
+}
+
+interface IContent {
+  steps: Array<IStep>;
+}
+
+type Control = "om" | "am";
+type StepNumber = "1" | "2" | "3";
+
+function HowItWorks() {
+  const [selectedControl, setSelectedControl] = useState<Control>("om");
+  const [selectedStep, setSelectedStep] = useState<StepNumber>("1");
+  const [content, setContent] = useState<IContent>(data.om);
+
+  /* conditional rendering */
+  const getControlClassName = (controlName: Control) => {
     return controlName === selectedControl ? "SwitchBtn Active" : "SwitchBtn";
   };
+
+  const getStepClassName = (step: StepNumber) => {
+    return step === selectedStep ? "Step Active" : "Step";
+  };
+
+  const { image } = content.steps[Number(selectedStep) - 1];
+
+  useEffect(() => {
+    /* switch content data */
+    setContent(data[selectedControl as keyof typeof data]);
+
+    /* set selected step */
+    setSelectedStep("1");
+  }, [selectedControl]);
 
   return (
     <section id="how-it-works" className="HowItWorks">
@@ -20,14 +54,14 @@ function HowItWorks() {
         <div className="Switch">
           <button
             type="button"
-            className={getClassName("om")}
+            className={getControlClassName("om")}
             onClick={() => setSelectedControl("om")}
           >
             Online Monitoring
           </button>
           <button
             type="button"
-            className={getClassName("am")}
+            className={getControlClassName("am")}
             onClick={() => setSelectedControl("am")}
           >
             Asset Management
@@ -37,36 +71,37 @@ function HowItWorks() {
 
       <div className="ContentWrapper">
         <ul className="Steps">
-          <li className="Step">
-            <div className="Container">
+          <li className={getStepClassName("1")}>
+            <button type="button" onClick={() => setSelectedStep("1")}>
               <div className="Number">1</div>
               <div className="Content">
-                <h3 className="Title">A</h3>
-                <p className="Description">B</p>
+                <h3 className="Title">{content.steps[0].title}</h3>
+                <p className="Description">{content.steps[0].description}</p>
               </div>
-            </div>
+            </button>
           </li>
-          <li className="Step">
-            <div className="Container">
+          <li className={getStepClassName("2")}>
+            <button type="button" onClick={() => setSelectedStep("2")}>
               <div className="Number">2</div>
               <div className="Content">
-                <h3 className="Title">C</h3>
-                <p className="Description">D</p>
+                <h3 className="Title">{content.steps[1].title}</h3>
+                <p className="Description">{content.steps[1].description}</p>
               </div>
-            </div>
+            </button>
           </li>
-          <li className="Step">
-            <div className="Container">
+          <li className={getStepClassName("3")}>
+            <button type="button" onClick={() => setSelectedStep("3")}>
               <div className="Number">3</div>
               <div className="Content">
-                <h3 className="Title">E</h3>
-                <p className="Description">F</p>
+                <h3 className="Title">{content.steps[2].title}</h3>
+                <p className="Description">{content.steps[2].description}</p>
               </div>
-            </div>
+            </button>
           </li>
         </ul>
+
         <div className="ImageContainer">
-          <img src="" alt="" className="Image" />
+          <img src={image} alt="" className="Image" />
         </div>
       </div>
     </section>
