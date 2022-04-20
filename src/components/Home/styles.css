@@ -22,7 +22,7 @@
   }
 
   .Home>.RowContainer>.ColumnContainer>.h4 {
-    font: var(--p-font) !important;
+    font: var(--medium-regular-font) !important;
     line-height: 1.6em !important;
   }
 

@@ -113,20 +113,20 @@
   padding: 0 var(--padding-lr-desktop);
 }
 
-.Teaser>.ContentWrapper>.Headings>h3 {
-  color: var(--sapphire);
-  font: var(--h3-font);
-  text-align: center;
-}
-
 .Teaser>.ContentWrapper>.Headings>h2 {
   color: var(--sapphire);
   font: var(--h2-font);
-  margin: 25px 0 65px;
   text-align: center;
 }
 
-.Teaser>.ContentWrapper>.Headings>h2>strong {
+.Teaser>.ContentWrapper>.Headings>h3 {
+  color: var(--deep-cove);
+  font: var(--h3-font);
+  text-align: center;
+  margin: 25px 0 65px;
+}
+
+.Teaser>.ContentWrapper>.Headings>h3>strong {
   font-weight: 500;
 }
 
@@ -221,8 +221,8 @@
 }
 
 .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Description {
-  color: var(--sapphire);
-  font: var(--p-font);
+  color: var(--deep-cove);
+  font: var(--medium-regular-font);
   line-height: 1.75rem;
   margin-bottom: 20px;
 }

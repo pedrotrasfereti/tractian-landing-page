@@ -8,8 +8,9 @@
 }
 
 .WhyTractian>.Heading {
+  color: var(--sapphire);
+  font: var(--h2-font);
   margin-bottom: 65px;
-  font: var(--h3-font);
 }
 
 .WhyTractian>.Button {
@@ -59,8 +60,8 @@
 }
 
 .WhyTractian>.Container>.Card>.Paragraph {
-  color: var(--klein-blue);
-  font: var(--p-font);
+  color: var(--deep-cove);
+  font: var(--medium-regular-font);
   margin-top: 25px;
   text-align: center;
   line-height: 27px;

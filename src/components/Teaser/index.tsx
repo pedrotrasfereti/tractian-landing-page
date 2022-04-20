@@ -51,11 +51,11 @@ function Teaser() {
       </div>
       <div className="ContentWrapper">
         <div className="Headings">
-          <h3>Effortless Predictive Maintainence</h3>
-          <h2>
+          <h2>Effortless Predictive Maintainence</h2>
+          <h3>
             Keep your team and machines{" "}
             <strong>performing at their best</strong>
-          </h2>
+          </h3>
         </div>
 
         <div className="Controls">

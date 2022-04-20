@@ -1,3 +1,13 @@
+@media only screen and (max-width: 600px) {
+  .Products {
+    padding: var(--padding-mobile) !important;
+  }
+
+  .Products>.Product>.Title {
+    font: 500 2em 'Rubik', sans-serif !important;
+  }
+}
+
 .Products {
   background: var(--solitude);
   min-height: var(--section-min-height);
@@ -22,7 +32,7 @@
 
 .Products>.Product>.Title {
   color: var(--solitude);
-  font: var(--h3-font);
+  font: var(--h2-font);
 }
 
 .Products>.Product>.ImageWrapper {
@@ -39,7 +49,7 @@
 
 .Products>.Product>.Description {
   color: var(--solitude);
-  font: 500 1.25em 'Rubik', sans-serif;
+  font: var(--large-strong-font);
   line-height: 1.75rem;
   text-align: center;
 }
@@ -47,12 +57,12 @@
 /* background design */
 .Products>.TrackOS {
   background: var(--midnight-express);
-  /* background-image: url("./assets/Design2.png");
-  background-size: cover; */
+  background-image: url("./assets/Design.png");
+  background-size: cover;
 }
 
 .Products>.SmartTrac {
   background: var(--klein-blue);
-  /* background-image: url("./assets/Design.png");
-  background-size: cover; */
+  background-image: url("./assets/Design2.png");
+  background-size: cover;
 }
