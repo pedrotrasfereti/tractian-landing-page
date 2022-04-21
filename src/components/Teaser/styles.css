@@ -92,7 +92,7 @@
 .Teaser>.Wrapper>.Title {
   text-transform: uppercase;
   color: var(--gunsmoke);
-  font: var(--small-thin-font);
+  font: var(--small-regular-font);
   margin-top: 50px;
 }
 

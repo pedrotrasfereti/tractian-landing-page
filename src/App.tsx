@@ -27,7 +27,6 @@ function App() {
         <HowItWorks />
         <Statistics />
       </main>
-
       <Bubble />
     </div>
   );

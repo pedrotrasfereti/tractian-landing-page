@@ -1,3 +1,13 @@
+@media only screen and (max-width: 600px) {
+  .HowItWorks>.Wrapper {
+    padding: var(--padding-tb-mobile) var(--padding-lr-mobile) 2rem !important;
+  }
+
+  .HowItWorks>.ContentWrapper {
+    padding: var(--padding-mobile) !important;
+  }
+}
+
 .HowItWorks {
   background: var(--solitude);
   min-height: var(--section-min-height);
@@ -19,6 +29,7 @@
   color: var(--deep-cove);
   font: var(--h3-font);
   margin: 20px 0 65px;
+  text-align: center;
 }
 
 .HowItWorks>.ContentWrapper {
@@ -26,6 +37,7 @@
   background: linear-gradient(90deg, var(--persian-blue) 0%, var(--blue-ryb) 100%);
   width: 100%;
   padding: var(--padding-desktop);
+  margin-bottom: 1rem;
   display: flex;
   flex-flow: row wrap;
   gap: var(--gap-medium);
@@ -40,6 +52,7 @@
 .HowItWorks>.ContentWrapper>.Steps,
 .HowItWorks>.ContentWrapper>.ImageContainer {
   flex: 1;
+  min-width: 20rem;
 }
 
 /* step list content - reset button style */
@@ -82,14 +95,15 @@
 .HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content>.Title {
   font: var(--h4-title-font);
   transition: var(--animation-fast);
+  text-align: start;
 }
 
 .HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content>.Description {
   font: var(--large-regular-font);
   line-height: 27px;
-  text-align: start;
   margin-top: 10px;
   transition: var(--animation-fast);
+  text-align: start;
 }
 
 /* step list content - button unactive */

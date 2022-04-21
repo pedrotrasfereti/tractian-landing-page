@@ -63,7 +63,7 @@
 
 .Home>.RowContainer>.ColumnContainer>.LinkParagraph {
   color: var(--white);
-  font: var(--small-thin-font);
+  font: var(--small-regular-font);
 }
 
 .Home>.RowContainer>.ColumnContainer>.LinkParagraph>a {

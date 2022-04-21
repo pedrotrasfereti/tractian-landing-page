@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
 :root {
   /* Color Variables */
@@ -23,7 +23,7 @@
   --whisper: rgb(229, 232, 235);
   --mischka: rgb(221, 223, 228);
   --link-water: rgb(208, 213, 218);
-  --clay: rgb(187, 195, 206);
+  --clay: rgb(198, 204, 210);
   --gull-gray: rgb(157, 169, 182);
   --gunsmoke: rgb(129, 131, 131);
   --tundora: rgb(64, 64, 64);
@@ -39,17 +39,17 @@
   --section-min-height: 100vh;
   
   /* Margins */
+  --margin-l-header: 0 auto 0 1.5rem;
+  --margin-r-header: 0 1.5rem 0 auto;
   --home-margin-top: var(--header-height);
-  --margin-l-mobile: 0 auto 0 2.18rem;
-  --margin-r-mobile: 0 2.18rem 0 auto;
 
   /* Paddings */
   --padding-desktop: 4.75rem 3.75rem;
-  --padding-mobile: 4.75rem 2.18rem;
+  --padding-mobile: 4.75rem 1.5rem;
   --padding-tb-desktop: 4.75rem;
   --padding-tb-mobile: 4.75rem;
   --padding-lr-desktop: 3.75rem;
-  --padding-lr-mobile: 2.18rem;
+  --padding-lr-mobile: 1.5rem;
 
   /* Borders */
   --border-radius: .3rem;
@@ -65,9 +65,10 @@
 
   /* Fonts */
   --x-small-regular-font: 400 .9em 'Rubik', sans-serif;
+  --x-small-strong-font: 500 .9em 'Rubik', sans-serif;
   --small-strong-font: 500 1em 'Rubik', sans-serif;
   --small-regular-font: 400 1em 'Rubik', sans-serif;
-  --small-thin-font: 100 1em 'Rubik', sans-serif;
+  --small-thin-font: 300 1em 'Rubik', sans-serif;
   --medium-regular-font: 400 1.15em 'Source Sans Pro', sans-serif;
   --large-regular-font: 400 1.25em 'Rubik', sans-serif;
   --large-strong-font: 500 1.25em 'Rubik', sans-serif;

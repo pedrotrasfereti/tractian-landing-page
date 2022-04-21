@@ -8,7 +8,7 @@
   }
 
   .Logo {
-    margin: var(--margin-l-mobile) !important;
+    margin: var(--margin-l-header) !important;
   }
 }
 
@@ -65,7 +65,7 @@
   cursor: pointer;
   display: none;
   background: none;
-  margin: var(--margin-r-mobile);
+  margin: var(--margin-r-header);
   border: 0;
   outline: 0;
 }

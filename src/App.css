@@ -66,8 +66,8 @@
 .Switch {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: stretch;
   border: 1px solid var(--gull-gray);
   border-radius: var(--border-radius);
   width: 100%;
@@ -85,23 +85,23 @@
   flex: 1;
 }
 
-.SwitchBtn:first-of-type {
+.Switch>.SwitchBtn:first-of-type {
   color: var(--dodger-blue);
   border-right: 1px solid var(--gull-gray);
   border-radius: .3rem 0 0 .3rem;
 }
 
-.SwitchBtn:last-of-type {
+.Switch>.SwitchBtn:last-of-type {
   color: var(--deep-cove);
   border-radius: 0 .3rem .3rem 0;
 }
 
-.SwitchBtn.Active:first-of-type {
+.Switch>.SwitchBtn.Active:first-of-type {
   color: var(--white);
   background: var(--dodger-blue);
 }
 
-.SwitchBtn.Active:last-of-type {
+.Switch>.SwitchBtn.Active:last-of-type {
   color: var(--white);
   background: var(--deep-cove);
 }
