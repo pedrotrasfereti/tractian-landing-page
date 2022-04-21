@@ -1,0 +1,65 @@
+.Statistics {
+  position: relative;
+  background: var(--sapphire);
+  min-height: 25.6rem;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0;
+}
+
+.Statistics>.Decoration {
+  background-color: var(--sunset-orange);
+  position: absolute;
+  width: 3px;
+  height: 133px;
+  right: 50%;
+  top: -13%;
+}
+
+.Statistics>.Container {
+  max-width: 69rem;
+}
+
+.Statistics>.Container>.Heading {
+  color: var(--solitude);
+  font: var(--h2-font);
+  text-align: center;
+  padding: 0 9rem;
+}
+
+.Statistics>.Container>.ContentWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 4rem;
+}
+
+.Statistics>.Container>.ContentWrapper>.Statistic {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.Statistics>.Container>.ContentWrapper>.Statistic:first-of-type {
+  border-right: 1px solid var(--deep-cove);
+}
+
+.Statistics>.Container>.ContentWrapper>.Statistic:last-of-type {
+  border-left: 1px solid var(--deep-cove);
+}
+
+.Statistics>.Container>.ContentWrapper>.Statistic>.Title {
+  color: var(--solitude);
+  font: 500 3.75em 'Rubik', sans-serif;
+  margin-bottom: 1.3rem;
+}
+
+.Statistics>.Container>.ContentWrapper>.Statistic>.Subtitle {
+  color: var(--clay);
+  font: var(--small-regular-font);
+  font-size: .9em;
+  letter-spacing: .1rem;
+  line-height: 1.75rem;
+  text-align: center;
+  text-transform: uppercase;
+}

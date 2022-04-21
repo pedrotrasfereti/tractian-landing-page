@@ -12,6 +12,7 @@ import {
   WhyTractian,
   Products,
   HowItWorks,
+  Statistics,
 } from "./components";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Products />
         <WhyTractian />
         <HowItWorks />
+        <Statistics />
       </main>
 
       <Bubble />

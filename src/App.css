@@ -75,7 +75,6 @@
 
 .Switch>.SwitchBtn {
   cursor: pointer;
-  color: var(--dodger-blue);
   background: var(--white);
   font: var(--small-strong-font);
   padding: 10px 20px;
@@ -87,17 +86,24 @@
 }
 
 .SwitchBtn:first-of-type {
+  color: var(--dodger-blue);
   border-right: 1px solid var(--gull-gray);
   border-radius: .3rem 0 0 .3rem;
 }
 
 .SwitchBtn:last-of-type {
+  color: var(--deep-cove);
   border-radius: 0 .3rem .3rem 0;
 }
 
-.SwitchBtn.Active {
+.SwitchBtn.Active:first-of-type {
   color: var(--white);
   background: var(--dodger-blue);
+}
+
+.SwitchBtn.Active:last-of-type {
+  color: var(--white);
+  background: var(--deep-cove);
 }
 
 .Button:hover,

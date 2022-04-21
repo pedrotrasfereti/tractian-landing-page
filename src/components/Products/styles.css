@@ -57,7 +57,7 @@
 
 /* background design */
 .Products>.TrackOS {
-  background: var(--midnight-express);
+  background: var(--eerie-black);
   background-image: url("./assets/Design.png");
   background-size: cover;
 }

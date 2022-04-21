@@ -22,7 +22,8 @@
 }
 
 .HowItWorks>.ContentWrapper {
-  background-color: var(--midnight-express);
+  background: var(--persian-blue);
+  background: linear-gradient(90deg, var(--persian-blue) 0%, var(--blue-ryb) 100%);
   width: 100%;
   padding: var(--padding-desktop);
   display: flex;
@@ -98,7 +99,7 @@
 
 .HowItWorks>.ContentWrapper>.Steps>.Step>button>.Number {
   background: var(--solitude);
-  color: var(--midnight-express);
+  color: var(--eerie-black);
 }
 
 .HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content>.Title {
@@ -106,27 +107,27 @@
 }
 
 .HowItWorks>.ContentWrapper>.Steps>.Step>button>.Content>.Description {
-  color: var(--gull-gray);
+  color: var(--mischka);
 }
 
 /* step list content - button active and hover */
 .HowItWorks>.ContentWrapper>.Steps>.Step.Active>button {
-  background-color: var(--mirage);
+  background-color: var(--light);
 }
 
 .HowItWorks>.ContentWrapper>.Steps>.Step>button:hover {
-  background-color: var(--faint);
+  background-color: var(--light-softer);
 }
 
 .HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Number,
 .HowItWorks>.ContentWrapper>.Steps>.Step>button:hover>.Number {
-  background: var(--caribbean-green);
-  color: var(--midnight-express);
+  background: var(--bright-turquoise);
+  color: var(--eerie-black);
 }
 
 .HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Content>.Title,
 .HowItWorks>.ContentWrapper>.Steps>.Step>button:hover>.Content>.Title {
-  color: var(--caribbean-green);
+  color: var(--bright-turquoise);
 }
 
 .HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Content>.Description,

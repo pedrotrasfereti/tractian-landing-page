@@ -1,35 +1,37 @@
 @charset "utf-8";
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
 :root {
   /* Color Variables */
-  --persian-blue: #1F37C0;
-  --klein-blue: #001BB8;
-  --navy: #020D77;
-  --deep-cove: #07074E;
-  --sapphire: #08084C;
-  --dodger-blue: #1774F0;
-  --deep-sky-blue: #05AFF3;
-  --caribbean-green: #03D8A9;
-  --bright-turquoise: #03F6C2;
-  --magic-mint: #9AEFDC;
-  --white: #FFFFFF;
-  --solitude: #F9FBFC;
-  --porcelain: #ECF0F1;
-  --whisper: #E5E8EB;
-  --mischka: #DDDFE4;
-  --link-water: #D0D5DA;
-  --clay: #BBC3CE;
-  --gull-gray: #9da9b6;
-  --faint: #1A1B30;
-  --mirage: #1B1F32;
-  --midnight-express: #18182E;
-  --tundora: #404040;
-  --gunsmoke: #818383;
-  --shadow-lighter: #0000000F;
-  --shadow: #0000002b;
+  --blue-ryb: rgb(44, 70, 216);
+  --persian-blue: rgb(33, 55, 181);
+  --klein-blue: rgb(9, 34, 174);
+  --navy: rgb(6, 17, 116);
+  --deep-cove: rgb(10, 10, 87);
+  --sapphire: rgb(8, 8, 76);
+  --dodger-blue: rgb(23, 116, 240);
+  --deep-sky-blue: rgb(5, 175, 243);
+  --caribbean-green: rgb(3, 206, 162);
+  --bright-turquoise: rgb(3, 246, 194);
+  --magic-mint: rgb(154, 239, 220);
+  --sunset-orange: rgb(254, 82, 65);
+  --white: rgb(255, 255, 255);
+  --solitude: rgb(249, 251, 252);
+  --porcelain: rgb(236, 240, 241);
+  --whisper: rgb(229, 232, 235);
+  --mischka: rgb(221, 223, 228);
+  --link-water: rgb(208, 213, 218);
+  --clay: rgb(187, 195, 206);
+  --gull-gray: rgb(157, 169, 182);
+  --gunsmoke: rgb(129, 131, 131);
+  --tundora: rgb(64, 64, 64);
+  --eerie-black: rgb(28, 28, 28);
+  --light: rgba(255, 255, 255, 0.122);
+  --light-softer: rgba(255, 255, 255, 0.063);
+  --shadow: rgba(0, 0, 0, 0.169);
+  --shadow-softer: rgba(0, 0, 0, 0.059);
 
   /* Dimensions */
   --header-height: 5rem;
@@ -106,7 +108,9 @@ label,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -122,6 +126,6 @@ a {
 }
 
 body {
-  background: rgb(1, 27, 182);
-  background: linear-gradient(0deg, #fff 0%, rgb(50, 50, 189) 100%);
+  background: var(--persian-blue);
+  background: linear-gradient(90deg, var(--persian-blue) 0%, var(--blue-ryb) 100%);
 }

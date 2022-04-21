@@ -48,7 +48,7 @@
 }
 
 .HeaderWhite>.NavBar>.Select {
-  background-color: var(--shadow-lighter);
+  background-color: var(--shadow-softer);
   color: var(--tundora);
 }
 
