@@ -7,7 +7,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: var(--padding-desktop);
+  padding: var(--padding-tb-desktop) var(--padding-lr-desktop) 2rem;
 }
 
 .HowItWorks>.Wrapper>.Title {
@@ -41,7 +41,7 @@
   flex: 1;
 }
 
-/* step list - reset button style */
+/* step list content - reset button style */
 .HowItWorks>.ContentWrapper>.Steps>.Step>button {
   display: flex;
   flex-flow: row nowrap;
@@ -91,7 +91,7 @@
   transition: var(--animation-fast);
 }
 
-/* step list - unactive */
+/* step list content - button unactive */
 .HowItWorks>.ContentWrapper>.Steps>.Step>button {
   background: transparent;
 }
@@ -109,21 +109,28 @@
   color: var(--gull-gray);
 }
 
-/* active */
+/* step list content - button active and hover */
 .HowItWorks>.ContentWrapper>.Steps>.Step.Active>button {
   background-color: var(--mirage);
 }
 
-.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Number {
+.HowItWorks>.ContentWrapper>.Steps>.Step>button:hover {
+  background-color: var(--faint);
+}
+
+.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Number,
+.HowItWorks>.ContentWrapper>.Steps>.Step>button:hover>.Number {
   background: var(--caribbean-green);
   color: var(--midnight-express);
 }
 
-.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Content>.Title {
+.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Content>.Title,
+.HowItWorks>.ContentWrapper>.Steps>.Step>button:hover>.Content>.Title {
   color: var(--caribbean-green);
 }
 
-.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Content>.Description {
+.HowItWorks>.ContentWrapper>.Steps>.Step.Active>button>.Content>.Description,
+.HowItWorks>.ContentWrapper>.Steps>.Step>button:hover>.Content>.Description {
   color: var(--white);
 }
 

@@ -242,6 +242,7 @@
   border: 0;
   border-radius: var(--border-radius-circle);
   background-color: var(--clay);
+  transition: var(--animation-fast);
 }
 
 .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators>.Indicator.Active {

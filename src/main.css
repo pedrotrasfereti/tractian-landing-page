@@ -23,6 +23,7 @@
   --link-water: #D0D5DA;
   --clay: #BBC3CE;
   --gull-gray: #9da9b6;
+  --faint: #1A1B30;
   --mirage: #1B1F32;
   --midnight-express: #18182E;
   --tundora: #404040;
@@ -122,5 +123,5 @@ a {
 
 body {
   background: rgb(1, 27, 182);
-  background: linear-gradient(0deg, rgba(1, 27, 182, 1) 0%, rgb(50, 50, 189) 100%);
+  background: linear-gradient(0deg, #fff 0%, rgb(50, 50, 189) 100%);
 }
