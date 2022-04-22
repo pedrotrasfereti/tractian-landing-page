@@ -13,6 +13,7 @@ import {
   Products,
   HowItWorks,
   Statistics,
+  Testimonials,
 } from "./components";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <WhyTractian />
         <HowItWorks />
         <Statistics />
+        <Testimonials />
       </main>
       <Bubble />
     </div>

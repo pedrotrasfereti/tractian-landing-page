@@ -1,0 +1,13 @@
+.Testimonials {
+  background-color: var(--solitude);
+  min-height: var(--section-min-height);
+  padding: var(--padding-desktop);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.Heading {
+  color: var(--sapphire);
+  font: var(--h2-font);
+}
