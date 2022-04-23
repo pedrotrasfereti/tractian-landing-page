@@ -1,5 +1,5 @@
 /* Assets */
-import { Eduarda, Gustavo, Rene, Tiago } from "../assets";
+import assets from "../assets";
 
 const socialProofs = [
   {
@@ -8,7 +8,7 @@ const socialProofs = [
       role: "General Maintenance Supervisor",
       company: "AmstedMaxion",
       industry: "",
-      picture: Tiago,
+      picture: assets.people.Tiago,
     },
     quote:
       "Before Tractian, failure happened without us having any chance to react. Now we are able to identify any unusual anomaly and this allows us to intervene before the breakdown happens.",
@@ -19,7 +19,7 @@ const socialProofs = [
       role: "Industrial Director",
       company: "",
       industry: "Waste Management Industry",
-      picture: Gustavo,
+      picture: assets.people.Gustavo,
     },
     quote:
       "With the Tractian solution we optimize time, reduce costs with failures anticipated by the solution. Their technology is a great tool for monitoring and managing our assets.",
@@ -30,7 +30,7 @@ const socialProofs = [
       role: "General Director",
       company: "",
       industry: "Food Industry",
-      picture: Eduarda,
+      picture: assets.people.Eduarda,
     },
     quote:
       "The device brings more reliability to the process, speeding up the analysis of information and avoiding production stops, which positively impacts productivity.",
@@ -41,7 +41,7 @@ const socialProofs = [
       role: "Mechanical Technician",
       company: "",
       industry: "Brewing Industry",
-      picture: Rene,
+      picture: assets.people.Rene,
     },
     quote:
       "A child can install the Tractian sensor, and the platform is as easy to use as a social network. Every system is very simple and reliable.",

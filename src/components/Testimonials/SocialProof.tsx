@@ -1,26 +1,19 @@
 import React from "react";
 
+/* Assets */
+import { FiveStars } from "./assets";
+
 /* Styles */
 import styles from "./styles.module.css";
 
-interface ISocialProofAuthor {
-  name: string;
-  role: string;
-  company?: string;
-  industry?: string;
-  picture: string;
-}
-
-interface ISocialProof {
-  author: ISocialProofAuthor;
-  quote: string;
-}
+/* Types */
+import ISocialProof from "../../interfaces/SocialProof";
 
 function SocialProof({ author, quote }: ISocialProof) {
   return (
     <div className={styles.SocialProof}>
       <div className={styles.Author}>
-        <div className={styles.ImageWrapper}>
+        <div className={styles.PersonImageWrapper}>
           <img src={author.picture} alt="" className={styles.Image} />
         </div>
 
@@ -33,10 +26,12 @@ function SocialProof({ author, quote }: ISocialProof) {
         </div>
       </div>
 
-      <div className={styles.Rating}>{/* FiveStars SVG */}</div>
+      <div className={styles.Rating}>
+        <FiveStars />
+      </div>
 
       <div className={styles.QuoteContainer}>
-        <p className={styles.Quote}>{quote}</p>
+        <p className={styles.Quote}>{`"${quote}"`}</p>
       </div>
     </div>
   );
