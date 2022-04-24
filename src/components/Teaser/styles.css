@@ -44,6 +44,11 @@
   .Teaser>.ContentWrapper>.Container>.ContentSlide>.Wrapper>.Indicators {
     margin-top: 50px !important;
   }
+
+  .Teaser>.Wrapper>.Carousel::before,
+  .Teaser>.Wrapper>.Carousel::after {
+    width: 50px !important;
+  }
 }
 
 @media only screen and (max-width: 500px) {

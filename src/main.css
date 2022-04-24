@@ -5,7 +5,7 @@
 
 :root {
   /* Color Variables */
-  --blue-ryb: rgb(44, 70, 216);
+  --blue-ryb: rgb(65, 89, 220);
   --persian-blue: rgb(33, 55, 181);
   --klein-blue: rgb(9, 34, 174);
   --navy: rgb(6, 17, 116);
@@ -72,6 +72,7 @@
   --small-regular-font: 400 1em 'Rubik', sans-serif;
   --small-thin-font: 300 1em 'Rubik', sans-serif;
   --medium-regular-font: 400 1.15em 'Source Sans Pro', sans-serif;
+  --medium-strong-font: 600 1.15em 'Source Sans Pro', sans-serif;
   --large-regular-font: 400 1.25em 'Rubik', sans-serif;
   --large-strong-font: 500 1.25em 'Rubik', sans-serif;
 

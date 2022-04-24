@@ -6,4 +6,5 @@ export { default as WhyTractian } from "./WhyTractian";
 export { default as HowItWorks } from "./HowItWorks";
 export { default as Statistics } from "./Statistics";
 export { default as Testimonials } from "./Testimonials";
+export { default as RequestADemo } from "./RequestADemo";
 export { default as Bubble } from "./Bubble";

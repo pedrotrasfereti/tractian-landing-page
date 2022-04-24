@@ -14,6 +14,7 @@ import {
   HowItWorks,
   Statistics,
   Testimonials,
+  RequestADemo,
 } from "./components";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <HowItWorks />
         <Statistics />
         <Testimonials />
+        <RequestADemo />
       </main>
       <Bubble />
     </div>

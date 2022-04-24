@@ -113,6 +113,17 @@
   filter: brightness(var(--dim-filter));
 }
 
+.Input {
+  background-color: var(--white);
+  font: var(--small-regular-font);
+  height: 42px;
+  width: 100%;
+  padding: 10px 15px;
+  box-shadow: 0 0.25rem 0.5rem var(--shadow);
+  border: 0;
+  border-radius: var(--border-radius);
+}
+
 /* Common Styles */
 .hidden {
   display: none;

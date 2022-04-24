@@ -85,6 +85,16 @@
   .Track {
     right: 47.02% !important;
   }
+
+  .BadgeImageWrapper {
+    height: 80px !important;
+    width: 80px !important;
+  }
+
+  .Slider::before,
+  .Slider::after {
+    width: 50px !important;
+  }
 }
 
 .Testimonials {
@@ -94,6 +104,7 @@
   flex-flow: column nowrap;
   align-items: center;
   padding-bottom: var(--padding-tb-desktop);
+  border-bottom: 1px solid var(--mischka);
 }
 
 /* Wrapper */
