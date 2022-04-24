@@ -1,15 +1,89 @@
-@media only screen and (max-width: 600px) {
-  .Wrapper {
-    padding: var(--padding-tb-mobile) .5rem 2rem !important;
+@media only screen and (max-width: 1000px) {
+  .SocialProof {
+    padding: 20px 40px !important;
   }
 
-  .Badges {
-    gap: var(--gap-small) !important;
+  .Name {
+    font: 600 1.2em 'Source Sans Pro', sans-serif !important;
+  }
+
+  .Role {
+    font: 300 1.15em 'Source Sans Pro', sans-serif !important;
+  }
+
+  .Quote {
+    font: 300 1.4em 'Source Sans Pro', sans-serif !important;
+    line-height: 2rem !important;
+  }
+
+  .Rating {
+    width: 135px !important;
+    margin: 15px 0 !important;
   }
 
   .BadgeImageWrapper {
     height: 100px !important;
     width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .SocialProof {
+    padding: 15px 35px !important;
+  }
+
+  .Name {
+    font: 600 1.15em 'Source Sans Pro', sans-serif !important;
+  }
+
+  .Role {
+    font: 300 1em 'Source Sans Pro', sans-serif !important;
+  }
+
+  .Quote {
+    font: 300 1.225em 'Source Sans Pro', sans-serif !important;
+    line-height: 1.75rem !important;
+  }
+
+  .Rating {
+    width: 125px !important;
+    margin: 10px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .SocialProof {
+    padding: 10px 20px !important;
+  }
+
+  .Name {
+    font: 600 1.05em 'Source Sans Pro', sans-serif !important;
+  }
+
+  .Role {
+    font: 300 .9em 'Source Sans Pro', sans-serif !important;
+  }
+
+  .Quote {
+    font: 300 1.15em 'Source Sans Pro', sans-serif !important;
+    line-height: 1.5rem !important;
+  }
+
+  .Rating {
+    width: 105px !important;
+    margin: 5px 0 !important;
+  }
+
+  .FloatLeft {
+    left: 1rem !important;
+  }
+
+  .FloatRight {
+    right: 1rem !important;
+  }
+
+  .Track {
+    right: 47.02% !important;
   }
 }
 
@@ -19,6 +93,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-bottom: var(--padding-tb-desktop);
 }
 
 /* Wrapper */
@@ -26,7 +101,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: var(--padding-tb-desktop) var(--padding-lr-desktop) 2rem;
+  padding: var(--padding-tb-desktop) var(--padding-lr-mobile) 2rem;
 }
 
 /* Wrapper - Badges */
@@ -48,6 +123,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 /* Slider - Shadows */
@@ -57,7 +133,7 @@
   content: "";
   height: 100%;
   position: absolute;
-  width: 300px;
+  width: 150px;
   z-index: 2;
 }
 
@@ -75,25 +151,25 @@
 /* Slider - Track */
 .Track {
   position: relative;
-  right: 30%;
+  right: 42.05%;
   display: flex;
   height: 350px;
-  margin-bottom: var(--padding-tb-desktop);
-  gap: var(--gap-x-large);
+  gap: var(--gap-large);
 }
 
 /* Social Proof Card */
 .SocialProof {
   background-color: var(--white);
-  min-width: 700px;
-  height: 98%;
+  width: 60%;
+  height: 340px;
   border: 0;
   border-radius: var(--border-radius);
   padding: 30px 50px;
   box-shadow: 0 0.25rem 0.5rem var(--shadow);
+  flex-shrink: 0;
 }
 
-/* Social Proof Card - Author */
+/* Social Proof Card - Content */
 .Author {
   display: flex;
 }
@@ -115,15 +191,6 @@
   font: 300 1.3em 'Source Sans Pro', sans-serif;
 }
 
-/* Rating */
-.Rating {
-  margin-top: 20px;
-}
-
-.QuoteContainer {
-  margin-top: 20px;
-}
-
 .Quote {
   color: var(--mine-shaft);
   font: 300 1.5em 'Source Sans Pro', sans-serif;
@@ -131,9 +198,8 @@
 }
 
 /* Slider - Button */
-.Button {
+.SliderButton {
   cursor: pointer;
-  position: absolute;
   background: white;
   border: 0;
   border-radius: var(--border-radius);
@@ -142,22 +208,35 @@
   box-shadow: 0 0.25rem 0.5rem 0 var(--shadow);
   opacity: .9;
   bottom: 50%;
-  z-index: 99;
+  z-index: 10;
 }
 
-.Button:hover {
+.SliderButton:hover {
   filter: brightness(var(--dim-filter));
 }
 
 .FloatLeft {
+  position: absolute;
   left: 2rem;
 }
 
 .FloatRight {
+  position: absolute;
   right: 2rem;
 }
 
+/* Button */
+.Button {
+  align-self: center;
+}
+
 /* Images */
+.Rating {
+  height: 32px;
+  width: 160px;
+  margin: 20px 0;
+}
+
 .BadgeImageWrapper {
   height: 120px;
   width: 120px;

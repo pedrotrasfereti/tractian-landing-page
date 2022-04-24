@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 } from "uuid";
 
 /* Assets */
 import assets from "./assets";
@@ -15,7 +16,7 @@ function Testimonials() {
       <div className={styles.Wrapper}>
         <div className={styles.Badges}>
           {assets.badges.map((badge) => (
-            <div className={styles.BadgeImageWrapper}>
+            <div key={v4()} className={styles.BadgeImageWrapper}>
               <img src={badge} alt={badge} className={styles.Image} />
             </div>
           ))}
@@ -25,6 +26,10 @@ function Testimonials() {
       </div>
 
       <Slider />
+
+      <button type="button" className={`${styles.Button} Button`}>
+        Request a Demo
+      </button>
     </section>
   );
 }

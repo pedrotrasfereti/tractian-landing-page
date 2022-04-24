@@ -27,7 +27,7 @@ function SocialProof({ author, quote }: ISocialProof) {
       </div>
 
       <div className={styles.Rating}>
-        <FiveStars />
+        <img src={FiveStars} alt="Five stars" className={styles.Image} />
       </div>
 
       <div className={styles.QuoteContainer}>

@@ -9,7 +9,7 @@ import GetAppLeaders from "./GetAppLeaders.png";
 
 export { default as ArrowLeft } from "./ArrowLeft";
 export { default as ArrowRight } from "./ArrowRight";
-export { default as FiveStars } from "./FiveStars";
+export { default as FiveStars } from "./FiveStars.png";
 
 export default {
   people: {

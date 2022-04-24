@@ -41,7 +41,7 @@ function Slider() {
       <button
         id="btn-backward"
         type="button"
-        className={`${styles.Button} ${styles.FloatLeft}`}
+        className={`${styles.SliderButton} ${styles.FloatLeft}`}
         onClick={() => handleClick(true)}
       >
         <ArrowLeft />
@@ -50,7 +50,7 @@ function Slider() {
       <button
         id="btn-foward"
         type="button"
-        className={`${styles.Button} ${styles.FloatRight}`}
+        className={`${styles.SliderButton} ${styles.FloatRight}`}
         onClick={() => handleClick(false)}
       >
         <ArrowRight />
