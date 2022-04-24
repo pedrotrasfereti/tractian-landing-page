@@ -1,10 +1,10 @@
 import React from "react";
 
 /* Styles */
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 
 /* Types */
-import { MenuButtonPropTypes } from "../../interfaces";
+import { MenuButtonPropTypes } from "../../../interfaces";
 
 function MenuButton({
   menuActive,

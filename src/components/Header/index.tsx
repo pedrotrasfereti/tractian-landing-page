@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 /* Children */
 import Logo from "./assets/Logo";
 import NavBar from "./NavBar";
-import MenuButton from "./MenuButton";
+import MenuButton from "./Menu/MenuButton";
 import Menu from "./Menu";
 
 /* Styles */
