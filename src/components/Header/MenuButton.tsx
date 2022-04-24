@@ -1,4 +1,9 @@
 import React from "react";
+
+/* Styles */
+import styles from "./styles.module.css";
+
+/* Types */
 import { MenuButtonPropTypes } from "../../interfaces";
 
 function MenuButton({
@@ -7,10 +12,13 @@ function MenuButton({
   toggleMenu,
 }: MenuButtonPropTypes) {
   const menuBtnClassName = menuActive
-    ? "MenuButton MenuBtnActive"
-    : "MenuButton";
+    ? `${styles.MenuButton} ${styles.MenuBtnActive}`
+    : `${styles.MenuButton}`;
 
-  const lineClassName = menuActive || headerChange ? "Line LineDark" : "Line";
+  const lineClassName =
+    menuActive || headerChange
+      ? `${styles.Line} ${styles.LineDark}`
+      : `${styles.Line}`;
 
   return (
     <button

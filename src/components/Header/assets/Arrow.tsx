@@ -1,11 +1,15 @@
 import React from "react";
 
+/* Styles */
+import styles from "../styles.module.css";
+
+/* Types */
 import { SVGPropTypes } from "../../../interfaces";
 
 function Arrow({ fillColor }: SVGPropTypes) {
   return (
     <svg
-      className="Arrow"
+      className={styles.Arrow}
       width={12}
       height={7}
       fill="none"

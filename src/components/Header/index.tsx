@@ -7,7 +7,7 @@ import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 
 /* Styles */
-import "./styles.css";
+import styles from "./styles.module.css";
 
 function Header() {
   const [headerChange, setHeaderChange] = useState(false);
@@ -35,7 +35,9 @@ function Header() {
 
   /* conditional styling */
   const headerClassName =
-    headerChange || menuActive ? "Header HeaderWhite" : "Header";
+    headerChange || menuActive
+      ? `${styles.Header} ${styles.HeaderWhite}`
+      : `${styles.Header}`;
 
   const logoFillColor = headerChange || menuActive ? "#08084C" : "#fff";
 
