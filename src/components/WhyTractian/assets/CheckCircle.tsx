@@ -1,9 +1,12 @@
 import React from "react";
 
+/* Styles */
+import styles from "../styles.module.css";
+
 function CheckCircle() {
   return (
     <svg
-      className="CheckIcon"
+      className={styles.CheckIcon}
       width={17}
       height={17}
       fill="none"

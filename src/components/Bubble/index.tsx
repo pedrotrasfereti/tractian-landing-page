@@ -1,15 +1,15 @@
 import React from "react";
 
 /* Assets */
-import MessageBubble2 from "./assets/MessageBubble2";
+import MessageBubble from "./assets/MessageBubble";
 
 /* Styles */
-import "./styles.css";
+import styles from "./styles.module.css";
 
 function Bubble() {
   return (
-    <div className="Bubble">
-      <MessageBubble2 />
+    <div className={styles.Bubble}>
+      <MessageBubble />
     </div>
   );
 }

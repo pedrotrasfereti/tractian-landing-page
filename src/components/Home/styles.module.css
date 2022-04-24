@@ -17,11 +17,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .Home>.RowContainer>.ColumnContainer>.h1 {
+  .Home>.RowContainer>.ColumnContainer>.Title {
     font: 500 2em 'Rubik', sans-serif !important;
   }
 
-  .Home>.RowContainer>.ColumnContainer>.h4 {
+  .Home>.RowContainer>.ColumnContainer>.Subtitle {
     font: var(--medium-regular-font) !important;
     line-height: 1.6em !important;
   }
@@ -75,12 +75,12 @@
   filter: brightness(var(--button-dim-filter));
 }
 
-.Home>.RowContainer>.ColumnContainer>.h1 {
+.Home>.RowContainer>.ColumnContainer>.Title {
   color: var(--white);
   font: var(--h1-font);
 }
 
-.Home>.RowContainer>.ColumnContainer>.h4 {
+.Home>.RowContainer>.ColumnContainer>.Subtitle {
   color: var(--white);
   font: var(--h4-sub-font);
   line-height: 2rem;
@@ -111,7 +111,6 @@
   opacity: .2;
   animation: wavvy 30s linear infinite;
 }
-
 
 .Wave3 {
   height: 30px;

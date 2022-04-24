@@ -11,44 +11,59 @@ import {
   KärcherLogo,
 } from "./assets";
 
+/* Styles */
+import styles from "./styles.module.css";
+
 function Slides() {
   return (
     <>
-      <div className="Slide">
+      <div className={styles.Slide}>
         <img
           src={AirLiquideLogo}
           alt="Air Liquide logo"
-          className="CompanyLogo Shorter"
+          className={`${styles.CompanyLogo} ${styles.Shorter}`}
         />
       </div>
-      <div className="Slide">
+      <div className={styles.Slide}>
         <img
           src={ArcelorMittalLogo}
           alt="Arcelor Mittal logo"
-          className="CompanyLogo"
+          className={styles.CompanyLogo}
         />
       </div>
-      <div className="Slide">
-        <img src={BoschLogo} alt="Bosch logo" className="CompanyLogo Shorter" />
+      <div className={styles.Slide}>
+        <img
+          src={BoschLogo}
+          alt="Bosch logo"
+          className={`${styles.CompanyLogo} ${styles.Shorter}`}
+        />
       </div>
-      <div className="Slide">
-        <img src={DanoneLogo} alt="Danone logo" className="CompanyLogo" />
+      <div className={styles.Slide}>
+        <img
+          src={DanoneLogo}
+          alt="Danone logo"
+          className={styles.CompanyLogo}
+        />
       </div>
-      <div className="Slide">
+      <div className={styles.Slide}>
         <img
           src={ElectroluxLogo}
           alt="Electrolux logo"
-          className="CompanyLogo Shorter"
+          className={`${styles.CompanyLogo} ${styles.Shorter}`}
         />
       </div>
-      <div className="Slide">
-        <img src={EmbraerLogo} alt="Embraer logo" className="CompanyLogo" />
+      <div className={styles.Slide}>
+        <img
+          src={EmbraerLogo}
+          alt="Embraer logo"
+          className={styles.CompanyLogo}
+        />
       </div>
-      <div className="Slide">
+      <div className={styles.Slide}>
         <img
           src={KärcherLogo}
           alt="Kärcher logo"
-          className="CompanyLogo Taller"
+          className={`${styles.CompanyLogo} ${styles.Taller}`}
         />
       </div>
     </>

@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Carousel from "./Carousel";
 
 /* Styles */
-import "./styles.css";
+import styles from "./styles.module.css";
 
 /* Data */
 import contentSlideData from "./data/contentSlideData";
@@ -17,11 +17,15 @@ function Teaser() {
 
   /* conditional styling */
   const getControlClassName = (controlName: string) => {
-    return controlName === selectedControl ? "Control Selected" : "Control";
+    return controlName === selectedControl
+      ? `${styles.Control} ${styles.Selected}`
+      : `${styles.Control}`;
   };
 
   const getIndicatorClassName = (indicator: string) => {
-    return indicator === selectedControl ? "Indicator Active" : "Indicator";
+    return indicator === selectedControl
+      ? `${styles.Indicator} ${styles.Active}`
+      : `${styles.Indicator}`;
   };
 
   useEffect(() => {
@@ -44,13 +48,13 @@ function Teaser() {
   }, [selectedControl]);
 
   return (
-    <section className="Teaser" id="teaser-section">
-      <div className="Wrapper">
-        <span className="Title">Trusted by 1,000+ companies</span>
+    <section className={styles.Teaser} id="teaser-section">
+      <div className={styles.Wrapper}>
+        <span className={styles.Title}>Trusted by 1,000+ companies</span>
         <Carousel />
       </div>
-      <div className="ContentWrapper">
-        <div className="Headings">
+      <div className={styles.ContentWrapper}>
+        <div className={styles.Headings}>
           <h2>Effortless Predictive Maintainence</h2>
           <h3>
             Keep your team and machines{" "}
@@ -58,7 +62,7 @@ function Teaser() {
           </h3>
         </div>
 
-        <div className="Controls">
+        <div className={styles.Controls}>
           <button
             className={getControlClassName("sensor")}
             type="button"
@@ -80,25 +84,29 @@ function Teaser() {
           >
             Asset Management
           </button>
-          <span className="Slider" ref={sliderRef} />
+          <span className={styles.Slider} ref={sliderRef} />
         </div>
 
-        <div className="Container">
-          <div className="ContentSlide">
-            <div className="ImageWrapper">
-              <img src={slide.image} alt={slide.imageAlt} className="Image" />
+        <div className={styles.Container}>
+          <div className={styles.ContentSlide}>
+            <div className={styles.ImageWrapper}>
+              <img
+                src={slide.image}
+                alt={slide.imageAlt}
+                className={styles.Image}
+              />
             </div>
 
-            <div className="Wrapper">
-              <h4 className="Title">{slide.title}</h4>
+            <div className={styles.Wrapper}>
+              <h4 className={styles.Title}>{slide.title}</h4>
 
-              <p className="Description">{slide.description}</p>
+              <p className={styles.Description}>{slide.description}</p>
 
-              <button className="Button" type="button">
+              <button className={`${styles.Button} Button`} type="button">
                 Schedule a demo
               </button>
 
-              <div className="Indicators">
+              <div className={styles.Indicators}>
                 <span className={getIndicatorClassName("sensor")} />
                 <span className={getIndicatorClassName("om")} />
                 <span className={getIndicatorClassName("am")} />

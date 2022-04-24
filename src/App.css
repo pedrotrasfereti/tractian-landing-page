@@ -44,6 +44,7 @@
   transition: .3s;
 }
 
+/* Link Button */
 .LinkBtn {
   border: 0;
   outline: 0;
@@ -63,6 +64,7 @@
   stroke: var(--bright-turquoise);
 }
 
+/* Switch */
 .Switch {
   display: flex;
   flex-flow: row nowrap;
@@ -73,6 +75,7 @@
   width: 100%;
 }
 
+/* Switch - Button */
 .Switch>.SwitchBtn {
   cursor: pointer;
   background: var(--white);
@@ -96,6 +99,7 @@
   border-radius: 0 .3rem .3rem 0;
 }
 
+/* Switch - Button Active */
 .Switch>.SwitchBtn.Active:first-of-type {
   color: var(--white);
   background: var(--dodger-blue);
@@ -106,13 +110,7 @@
   background: var(--deep-cove);
 }
 
-.Button:hover,
-.ButtonAlt:hover,
-.ButtonAltColored:hover,
-.SwitchBtn:hover {
-  filter: brightness(var(--dim-filter));
-}
-
+/* Input */
 .Input {
   background-color: var(--white);
   font: var(--small-regular-font);
@@ -122,6 +120,14 @@
   box-shadow: 0 0.25rem 0.5rem var(--shadow);
   border: 0;
   border-radius: var(--border-radius);
+}
+
+/* Buttons - Hover Effect */
+.Button:hover,
+.ButtonAlt:hover,
+.ButtonAltColored:hover,
+.SwitchBtn:hover {
+  filter: brightness(var(--dim-filter));
 }
 
 /* Common Styles */

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 /* Styles */
-import "./styles.css";
+import styles from "./styles.module.css";
 
 /* Data */
 import data from "./data";
@@ -31,7 +31,9 @@ function HowItWorks() {
   };
 
   const getStepClassName = (step: StepNumber) => {
-    return step === selectedStep ? "Step Active" : "Step";
+    return step === selectedStep
+      ? `${styles.Step} ${styles.Active}`
+      : `${styles.Step}`;
   };
 
   const { image } = content.steps[Number(selectedStep) - 1];
@@ -45,10 +47,10 @@ function HowItWorks() {
   }, [selectedControl]);
 
   return (
-    <section id="how-it-works" className="HowItWorks">
-      <div className="Wrapper">
-        <h2 className="Title">How It Works?</h2>
-        <h3 className="Subtitle">
+    <section id="how-it-works" className={styles.HowItWorks}>
+      <div className={styles.Wrapper}>
+        <h2 className={styles.Title}>How It Works?</h2>
+        <h3 className={styles.Subtitle}>
           Combine monitoring and management, take your pick:
         </h3>
         <div className="Switch">
@@ -69,39 +71,45 @@ function HowItWorks() {
         </div>
       </div>
 
-      <div className="ContentWrapper">
-        <ul className="Steps">
+      <div className={styles.ContentWrapper}>
+        <ul className={styles.Steps}>
           <li className={getStepClassName("1")}>
             <button type="button" onClick={() => setSelectedStep("1")}>
-              <div className="Number">1</div>
-              <div className="Content">
-                <h3 className="Title">{content.steps[0].title}</h3>
-                <p className="Description">{content.steps[0].description}</p>
+              <div className={styles.Number}>1</div>
+              <div className={styles.Content}>
+                <h3 className={styles.Title}>{content.steps[0].title}</h3>
+                <p className={styles.Description}>
+                  {content.steps[0].description}
+                </p>
               </div>
             </button>
           </li>
           <li className={getStepClassName("2")}>
             <button type="button" onClick={() => setSelectedStep("2")}>
-              <div className="Number">2</div>
-              <div className="Content">
-                <h3 className="Title">{content.steps[1].title}</h3>
-                <p className="Description">{content.steps[1].description}</p>
+              <div className={styles.Number}>2</div>
+              <div className={styles.Content}>
+                <h3 className={styles.Title}>{content.steps[1].title}</h3>
+                <p className={styles.Description}>
+                  {content.steps[1].description}
+                </p>
               </div>
             </button>
           </li>
           <li className={getStepClassName("3")}>
             <button type="button" onClick={() => setSelectedStep("3")}>
-              <div className="Number">3</div>
-              <div className="Content">
-                <h3 className="Title">{content.steps[2].title}</h3>
-                <p className="Description">{content.steps[2].description}</p>
+              <div className={styles.Number}>3</div>
+              <div className={styles.Content}>
+                <h3 className={styles.Title}>{content.steps[2].title}</h3>
+                <p className={styles.Description}>
+                  {content.steps[2].description}
+                </p>
               </div>
             </button>
           </li>
         </ul>
 
-        <div className="ImageContainer">
-          <img src={image} alt="" className="Image" />
+        <div className={styles.ImageContainer}>
+          <img src={image} alt="" className={styles.Image} />
         </div>
       </div>
     </section>
