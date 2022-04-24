@@ -47,9 +47,9 @@
 
   /* Paddings */
   --padding-desktop: 4.75rem 3.75rem;
-  --padding-mobile: 4.75rem 1.5rem;
+  --padding-mobile: 3rem 1.5rem;
   --padding-tb-desktop: 4.75rem;
-  --padding-tb-mobile: 4.75rem;
+  --padding-tb-mobile: 3rem;
   --padding-lr-desktop: 3.75rem;
   --padding-lr-mobile: 1.5rem;
 
