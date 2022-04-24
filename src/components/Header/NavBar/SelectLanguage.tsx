@@ -1,10 +1,10 @@
 import React from "react";
 
 /* Styles */
-import styles from "../Header/styles.module.css";
+import styles from "../styles.module.css";
 
 /* Types */
-import { NavBarChildPropTypes } from "../../interfaces";
+import { NavBarChildPropTypes } from "../../../interfaces";
 
 function SelectLanguage({ inMenu }: NavBarChildPropTypes) {
   return inMenu ? (

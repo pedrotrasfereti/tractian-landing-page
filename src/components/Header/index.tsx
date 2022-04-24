@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 /* Children */
 import Logo from "./assets/Logo";
-import NavBar from "../NavBar";
+import NavBar from "./NavBar";
 import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 

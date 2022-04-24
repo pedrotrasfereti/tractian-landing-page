@@ -1,15 +1,15 @@
 import React from "react";
 
 /* Children */
-import Arrow from "../Header/assets/Arrow";
+import Arrow from "../assets/Arrow";
 import NavButtons from "./NavButtons";
 import SelectLanguage from "./SelectLanguage";
 
 /* Styles */
-import styles from "../Header/styles.module.css";
+import styles from "../styles.module.css";
 
 /* Types */
-import { NavBarPropTypes } from "../../interfaces";
+import { NavBarPropTypes } from "../../../interfaces";
 
 function NavBar({ headerChange, inMenu }: NavBarPropTypes) {
   /* conditional styling */

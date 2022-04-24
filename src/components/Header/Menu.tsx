@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Children */
-import NavBar from "../NavBar";
+import NavBar from "./NavBar";
 
 /* Styles */
 import styles from "./styles.module.css";
