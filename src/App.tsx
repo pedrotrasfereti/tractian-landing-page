@@ -15,6 +15,7 @@ import {
   Statistics,
   Testimonials,
   RequestADemo,
+  Footer,
 } from "./components";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Statistics />
         <Testimonials />
         <RequestADemo />
+        <Footer />
       </main>
       <Bubble />
     </div>

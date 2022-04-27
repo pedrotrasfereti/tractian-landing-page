@@ -1,0 +1,154 @@
+@media only screen and (max-width: 950px) {
+  .Top {
+    flex-flow: column nowrap !important;
+    gap: 3rem !important;
+  }
+
+  .SocialLinks {
+    flex-flow: row nowrap !important;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .Footer {
+    padding: var(--padding-tb-mobile) 5rem !important;
+  }
+
+  .Bottom {
+    flex-flow: column nowrap !important;
+    gap: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .GroupTitle,
+  .Link,
+  .Copyright,
+  .Email {
+    text-align: center;
+  }
+
+  .Top,
+  .Bottom,
+  .LinksContainer {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+.Footer {
+  background: var(--persian-blue);
+  background: linear-gradient(-90deg, var(--persian-blue) 0%, var(--blue-ryb) 100%);
+  min-height: 30.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+  padding: var(--padding-tb-desktop) 10rem;
+}
+
+/* General */
+.Top,
+.Bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Copyright,
+.Email,
+.GroupTitle {
+  color: var(--white);
+}
+
+.Link:hover,
+.SocialLink:hover {
+  filter: brightness(var(--dim-filter));
+}
+
+/* Top */
+.Top {
+  gap: 5rem;
+}
+
+/* Top - Links */
+.LinksContainer {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 2;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.Group,
+.LinkList {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.Group {
+  gap: 1rem;
+}
+
+.LinkList {
+  gap: .5rem;
+}
+
+.GroupTitle {
+  font: var(--medium-strong-font);
+}
+
+.Link {
+  cursor: pointer;
+  color: var(--solitude);
+  font: var(--medium-regular-font);
+}
+
+/* Social Links */
+.SocialLinks {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.SocialLink {
+  cursor: pointer;
+}
+
+/* Decoration */
+.Decoration {
+  background-color: var(--dodger-blue);
+  height: 1px;
+  width: 100%;
+  border: 0;
+  border-radius: var(--border-radius);
+}
+
+/* Bottom */
+.Copyright {
+  font: var(--x-small-regular-font);
+}
+
+.Email {
+  font: var(--x-small-strong-font);
+}
+
+/* Images */
+.Icon,
+.Logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+/* Images - Logo */
+.LogoContainer {
+  height: 20px;
+}
+
+/* Images - Icon */
+.SocialLink {
+  width: 24px;
+  height: 24px;
+}
