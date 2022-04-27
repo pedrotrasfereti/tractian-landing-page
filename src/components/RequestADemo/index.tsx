@@ -1,9 +1,13 @@
-import React from "react";
+import React, { FormEvent } from "react";
 
 /* Styles */
 import styles from "./styles.module.css";
 
 function RequestADemo() {
+  const handleClick = (e: FormEvent) => {
+    e.preventDefault();
+  };
+
   return (
     <section id="request-a-demo" className={styles.RequestADemo}>
       <h2 className={styles.Title}>Improve your maintenance processes</h2>
@@ -101,7 +105,11 @@ function RequestADemo() {
           </div>
         </fieldset>
 
-        <button type="submit" className={`${styles.Button} Button`}>
+        <button
+          type="submit"
+          className={`${styles.Button} Button`}
+          onClick={(evt) => handleClick(evt)}
+        >
           Send
         </button>
       </form>
