@@ -1,15 +1,12 @@
 import React from "react";
 
-/* Styles */
-import styles from "../styles.module.css";
-
 /* Types */
-import { SVGPropTypes } from "../../../interfaces";
+import { SVGPropTypes } from "../interfaces";
 
-function Logo({ fillColor }: SVGPropTypes) {
+function Logo({ className, fillColor }: SVGPropTypes) {
   return (
     <svg
-      className={styles.Logo}
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 74.42 10.15"
       fill={fillColor}

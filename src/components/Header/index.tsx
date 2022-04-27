@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 
+/* Assets */
+import Logo from "../../assets/Logo";
+
 /* Children */
-import Logo from "./assets/Logo";
 import NavBar from "./NavBar";
 import MenuButton from "./Menu/MenuButton";
 import Menu from "./Menu";
@@ -43,7 +45,7 @@ function Header() {
 
   return (
     <header className={headerClassName}>
-      <Logo fillColor={logoFillColor} />
+      <Logo className={styles.Logo} fillColor={logoFillColor} />
       <NavBar headerChange={headerChange} />
       <MenuButton
         menuActive={menuActive}

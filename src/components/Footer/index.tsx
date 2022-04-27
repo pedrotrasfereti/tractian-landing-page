@@ -1,7 +1,8 @@
 import React from "react";
 
 /* Assets */
-import { Logo, Facebook, Instagram, LinkedIn, YouTube } from "./assets";
+import Logo from "../../assets/Logo";
+import { Facebook, Instagram, LinkedIn, YouTube } from "./assets";
 
 /* Styles */
 import styles from "./styles.module.css";
@@ -13,7 +14,7 @@ function Footer() {
       <div className={styles.Top}>
         {/* Logo */}
         <div className={styles.LogoContainer}>
-          <Logo fillColor="#fff" />
+          <Logo className={styles.Logo} fillColor="#fff" />
         </div>
 
         {/* Links */}
