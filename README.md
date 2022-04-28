@@ -17,10 +17,10 @@
 Welcome to the _GitHub repository_ of TRACTIAN's **Landing Page**!
 Here you can find information about the project's development, such as which technologies were used, how to install and run the project, usage and more.
 
-This application was developed as a Front-end challenge for Tractian[].
-The goal was to recreate their existing homepage using pure React, meaning, only the essencial libraries, in the span of 10 days.
+This application was developed as a **Front-end challenge** for [**Tractian**][tractian-url].
+The goal was to recreate their existing homepage using pure **React**, meaning, only the essencial libraries, in the span of 10 days.
 
-I was able to create a fully responsive `header` and hamburger `menu`, as well as eight different sections:
+I was able to create a fully responsive header and hamburger menu, as well as eight different sections:
 - Home, or "Hero";
 - Teaser (slider and panel);
 - Products;
@@ -29,8 +29,8 @@ I was able to create a fully responsive `header` and hamburger `menu`, as well a
 - Testimonials (slider);
 - Schedule a demo (form);
 
-I also had total freedom in regards to the UI, and could take inspiration from Cobli[]'s website.
-With the exception of the original images, all the other icons and illustrations were created by me using Figma[] and designstripe[].
+I also had total freedom in regards to the UI, and could take inspiration from [**Cobli**][cobli-url]'s website.
+With the exception of the original images, all the other icons and illustrations were created by me using [**Figma**][figma-url] and [**designstripe**][designstripe-url].
 
 <!-- <div align="center">
 
@@ -153,4 +153,8 @@ List of resources I find helpful and would like to give credit to:
 [issues-url]: https://github.com/pedrotrasfereti/tractian-landing-page/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/pedro-trasfereti/
+[tractian-url]: https://tractian.com/en
+[cobli-url]: https://www.cobli.co/
+[figma-url]: https://www.figma.com
+[designstripe-url]: https://designstripe.com/
 
