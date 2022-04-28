@@ -134,8 +134,10 @@ List of resources I find helpful and would like to give credit to:
 * [Vite](https://vitejs.dev/) - module bundler
 * [ESLint](https://eslint.org/)
 * [Prettier](https://prettier.io/)
-* [SonarCloud](https://sonarcloud.io/)
 * [Google Fonts](https://fonts.google.com/)
+* [Figma][figma-url]
+* [designstripe][designstripe-url]
+* [SonarCloud](https://sonarcloud.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
